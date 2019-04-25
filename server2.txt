@@ -1,0 +1,10 @@
+student@S34:~$ gedit Server2.java
+student@S34:~$ javac Server2.java
+student@S34:~$ java Server2
+Server is running...
+connection establised
+server send echo to client 
+server send echo to client 
+hello
+
+

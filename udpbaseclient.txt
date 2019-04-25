@@ -1,0 +1,8 @@
+student@S34:~$ gedit udpBaseClient_2.java
+student@S34:~$ javac udpBaseClient_2.java
+student@S34:~$ java udpBaseClient_2
+h 
+i
+hi
+
+

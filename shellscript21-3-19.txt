@@ -1,0 +1,89 @@
+student@T42:~$ vi subodhi.sh
+student@T42:~$ chmod +x subodhi.sh
+student@T42:~$ ./subodhi.sh
+hello
+student@T42:~$ gedit program.sh
+student@T42:~$ chmod +x program.sh
+student@T42:~$ ./program.sh
+welcome
+student@T42:~$ vi myscript.sh
+student@T42:~$ chmod +x myscript.sh
+student@T42:~$ ./myscript.sh
+hello world
+The date today isThu Mar 21 14:29:35 IST 2019
+The current directoey is /home/student
+student@T42:~$ gedit myscript.sh
+student@T42:~$ gedit script.sh
+student@T42:~$ chmod +x script.sh
+student@T42:~$ ./script.sh
+Value of vra is test string
+student@T42:~$ gedit script.sh
+student@T42:~$ chmod +x script.sh
+student@T42:~$ ./script.sh
+Value of var is test string
+student@T42:~$ gedit scipt.sh
+student@T42:~$ gedit script2.sh
+student@T42:~$ chmod +x script2.sh
+student@T42:~$ ./script2.sh
+value of var is $var
+student@T42:~$ gedit command.sh
+student@T42:~$ chmod +x command.sh
+student@T42:~$ ./command.sh a b c d
+The command is./command.sh
+The first argument is a
+The second argument is b
+The third argument is c
+The fourth argument is d
+student@T42:~$ gedit command.sh
+student@T42:~$ chmod +x command.sh
+student@T42:~$ ./command.sh a b c d
+The command is./command.sh
+The first argument is a
+The second argument is b
+The third argument is c
+The fourth argument is d
+Total number of parameters is 4
+a b c d
+a b c d
+student@T42:~$ gedit newfile.sh
+student@T42:~$ chmod +x newfile.sh
+student@T42:~$ ./newfile.sh
+./newfile.sh: line 1: x=37: command not found
+
+student@T42:~$ gedit newfile.sh
+student@T42:~$ ./newfile.sh
+
+
+student@T42:~$ gedit newfile.sh
+student@T42:~$ ./newfile.sh
+
+student@T42:~$ gedit file.sh
+student@T42:~$ chmod +x file.sh
+student@T42:~$ ./file.sh
+5 + 10 = 15
+student@T42:~$ gedit newfile.sh
+student@T42:~$ chmod +x newfile.sh
+student@T42:~$ ./newfile.sh
+37
+student@T42:~$ gedit file.sh
+student@T42:~$ ./newfile.sh
+37
+student@T42:~$ gedit file.sh
+student@T42:~$ chmod +x file.sh
+student@T42:~$ ./file.sh
+5 + 10 = 15
+Enter two numbers :x1
+5 + 1 = 6
+student@T42:~$ gedit file.sh
+student@T42:~$ ./file.sh
+5 + 10 = 15
+Enter two numbers :1 2
+1 + 2 = 3
+student@T42:~$ gedit file.sh
+student@T42:~$ ./file.sh
+5 + 10 = 15
+Enter two numbers :2 3
+2 + 3 = 5
+Sum is 24
+student@T42:~$ 
+

@@ -1,0 +1,370 @@
+student@T42:~$ cd ajce
+student@T42:~/ajce$ cd mca
+student@T42:~/ajce/mca$ ls intmca
+j.txt
+student@T42:~/ajce/mca$ cd intmca
+student@T42:~/ajce/mca/intmca$ cat > state
+kerala
+kashmir
+punjad
+odisha
+^C
+student@T42:~/ajce/mca/intmca$ cat state
+kerala
+kashmir
+punjad
+odisha
+student@T42:~/ajce/mca/intmca$ paste ---< state
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T42:~/ajce/mca/intmca$ paste - - - < state
+kerala	kashmir	punjad
+odisha		
+student@T42:~/ajce/mca/intmca$ cat state | paste - - -
+kerala	kashmir	punjad
+odisha		
+student@T42:~/ajce/mca/intmca$ cat > linux.txt
+^C
+student@T42:~/ajce/mca/intmca$ mv j.txt linux.txt
+student@T42:~/ajce/mca/intmca$ cat linux.txt
+Linux (/ˈlɪnəks/ (About this soundlisten) LIN-əks)[9][10] is a family of free and open-source software operating systems based on the Linux kernel,[11] an operating system kernel first released on September 17, 1991 by Linus Torvalds.[12][13][14] Linux is typically packaged in a Linux distribution (or distro for short).
+
+Distributions include the Linux kernel and supporting system software and libraries, many of which are provided by the GNU Project. Many Linux distributions use the word "Linux" in their name, but the Free Software Foundation uses the name GNU/Linux to emphasize the importance of GNU software, causing some controversy.[15][16]
+
+Popular Linux distributions[17][18][19] include Debian, Fedora, and Ubuntu. Commercial distributions include Red Hat Enterprise Linux and SUSE Linux Enterprise Server. Desktop Linux distributions include a windowing system such as X11 or Wayland, and a desktop environment such as GNOME or KDE Plasma. Distributions intended for servers may omit graphics altogether, and include a solution stack such as LAMP. Because Linux is freely redistributable, anyone may create a distribution for any purpose.
+
+Linux was originally developed for personal computers based on the Intel x86 architecture, but has since been ported to more platforms than any other operating system.[20] Linux is the leading operating system on servers and other big iron systems such as mainframe computers, and the only OS used on TOP500 supercomputers (since November 2017, having gradually eliminated all competitors).[21][22][23] It is used by around 2.3 percent of desktop computers.[24][25] The Chromebook, which runs the Linux kernel-based Chrome OS, dominates the US K–12 education market and represents nearly 20 percent of sub-$300 notebook sales in the US.[26]
+
+Linux also runs on embedded systems, i.e. devices whose operating system is typically built into the firmware and is highly tailored to the system. This includes routers, automation controls, televisions,[27][28] digital video recorders, video game consoles, and smartwatches.[29] Many smartphones and tablet computers run Android and other Linux derivatives.[30] Because of the dominance of Android on smartphones, Linux has the largest installed base of all general-purpose operating systems.[31]
+
+Linux is one of the most prominent examples of free and open-source software collaboration. The source code may be used, modified and distributed—commercially or non-commercially—by anyone under the terms of its respective licenses, such as the GNU General Public License. 
+
+
+The Unix operating system was conceived and implemented in 1969, at AT&T's Bell Laboratories in the United States by Ken Thompson, Dennis Ritchie, Douglas McIlroy, and Joe Ossanna.[32] First released in 1971, Unix was written entirely in assembly language, as was common practice at the time. Later, in a key pioneering approach in 1973, it was rewritten in the C programming language by Dennis Ritchie (with the exception of some hardware and I/O routines). The availability of a high-level language implementation of Unix made its porting to different computer platforms easier.[33]
+
+Due to an earlier antitrust case forbidding it from entering the computer business, AT&T was required to license the operating system's source code to anyone who asked.[34] As a result, Unix grew quickly and became widely adopted by academic institutions and businesses. In 1984, AT&T divested itself of Bell Labs; freed of the legal obligation requiring free licensing, Bell Labs began selling Unix as a proprietary product, where users were not legally allowed to modify Unix. The GNU Project, started in 1983 by Richard Stallman, had the goal of creating a "complete Unix-compatible software system" composed entirely of free software. Work began in 1984.[35] Later, in 1985, Stallman started the Free Software Foundation and wrote the GNU General Public License (GNU GPL) in 1989. By the early 1990s, many of the programs required in an operating system (such as libraries, compilers, text editors, a Unix shell, and a windowing system) were completed, although low-level elements such as device drivers, daemons, and the kernel, called GNU/Hurd, were stalled and incomplete.[36]
+
+Linus Torvalds has stated that if the GNU kernel had been available at the time (1991), he would not have decided to write his own.[37]
+
+Although not released until 1992, due to legal complications, development of 386BSD, from which NetBSD, OpenBSD and FreeBSD descended, predated that of Linux. Torvalds has also stated that if 386BSD had been available at the time, he probably would not have created Linux.[38]
+
+MINIX was created by Andrew S. Tanenbaum, a computer science professor, and released in 1987 as a minimal Unix-like operating system targeted at students and others who wanted to learn the operating system principles. Although the complete source code of MINIX was freely available, the licensing terms prevented it from being free software until the licensing changed in April 2000.[
+student@T42:~/ajce/mca/intmca$ more linux.txt
+Linux (/ˈlɪnəks/ (About this soundlisten) LIN-əks)[9][10] is a family of free an
+d open-source software operating systems based on the Linux kernel,[11] an opera
+ting system kernel first released on September 17, 1991 by Linus Torvalds.[12][1
+3][14] Linux is typically packaged in a Linux distribution (or distro for short)
+.
+
+Distributions include the Linux kernel and supporting system software and librar
+ies, many of which are provided by the GNU Project. Many Linux distributions use
+ the word "Linux" in their name, but the Free Software Foundation uses the name 
+GNU/Linux to emphasize the importance of GNU software, causing some controversy.
+[15][16]
+
+Popular Linux distributions[17][18][19] include Debian, Fedora, and Ubuntu. Comm
+ercial distributions include Red Hat Enterprise Linux and SUSE Linux Enterprise 
+Server. Desktop Linux distributions include a windowing system such as X11 or Wa
+yland, and a desktop environment such as GNOME or KDE Plasma. Distributions inte
+nded for servers may omit graphics altogether, and include a solution stack such
+ as LAMP. Because Linux is freely redistributable, anyone may create a distribut
+ion for any purpose.
+
+Linux was originally developed for personal computers based on the Intel x86 arc
+hitecture, but has since been ported to more platforms than any other operating 
+system.[20] Linux is the leading operating system on servers and other big iron 
+systems such as mainframe computers, and the only OS used on TOP500 supercompute
+student@T42:~/ajce/mca/intmca$ more -d linux.txt
+Linux (/ˈlɪnəks/ (About this soundlisten) LIN-əks)[9][10] is a family of free and open-sour
+ce software operating systems based on the Linux kernel,[11] an operating system kernel fir
+st released on September 17, 1991 by Linus Torvalds.[12][13][14] Linux is typically package
+d in a Linux distribution (or distro for short).
+
+Distributions include the Linux kernel and supporting system software and libraries, many o
+f which are provided by the GNU Project. Many Linux distributions use the word "Linux" in t
+heir name, but the Free Software Foundation uses the name GNU/Linux to emphasize the import
+ance of GNU software, causing some controversy.[15][16]
+
+Popular Linux distributions[17][18][19] include Debian, Fedora, and Ubuntu. Commercial dist
+ributions include Red Hat Enterprise Linux and SUSE Linux Enterprise Server. Desktop Linux 
+distributions include a windowing system such as X11 or Wayland, and a desktop environment 
+such as GNOME or KDE Plasma. Distributions intended for servers may omit graphics altogethe
+r, and include a solution stack such as LAMP. Because Linux is freely redistributable, anyo
+ne may create a distribution for any purpose.
+
+Linux was originally developed for personal computers based on the Intel x86 architecture, 
+but has since been ported to more platforms than any other operating system.[20] Linux is t
+he leading operating system on servers and other big iron systems such as mainframe compute
+rs, and the only OS used on TOP500 supercomputers (since November 2017, having gradually el
+iminated all competitors).[21][22][23] It is used by around 2.3 percent of desktop computer
+s.[24][25] The Chromebook, which runs the Linux kernel-based Chrome OS, dominates the US K–
+12 education market and represents nearly 20 percent of sub-$300 notebook sales in the US.[
+26]
+
+Linux also runs on embedded systems, i.e. devices whose operating system is typically built
+ into the firmware and is highly tailored to the system. This includes routers, automation 
+controls, televisions,[27][28] digital video recorders, video game consoles, and smartwatch
+es.[29] Many smartphones and tablet computers run Android and other Linux derivatives.[30] 
+Because of the dominance of Android on smartphones, Linux has the largest installed base of
+ all general-purpose operating systems.[31]
+
+Linux is one of the most prominent examples of free and open-source software collaboration.
+ The source code may be used, modified and distributed—commercially or non-commercially—by 
+anyone under the terms of its respective licenses, such as the GNU General Public License. 
+
+
+The Unix operating system was conceived and implemented in 1969, at AT&T's Bell Laboratorie
+s in the United States by Ken Thompson, Dennis Ritchie, Douglas McIlroy, and Joe Ossanna.[3
+2] First released in 1971, Unix was written entirely in assembly language, as was common pr
+actice at the time. Later, in a key pioneering approach in 1973, it was rewritten in the C 
+programming language by Dennis Ritchie (with the exception of some hardware and I/O routine
+s). The availability of a high-level language implementation of Unix made its porting to di
+fferent computer platforms easier.[33]
+
+Due to an earlier antitrust case forbidding it from entering the computer business, AT&T wa
+s required to license the operating system's source code to anyone who asked.[34] As a resu
+lt, Unix grew quickly and became widely adopted by academic institutions and businesses. In
+ 1984, AT&T divested itself of Bell Labs; freed of the legal obligation requiring free lice
+nsing, Bell Labs began selling Unix as a proprietary product, where users were not legally 
+allowed to modify Unix. The GNU Project, started in 1983 by Richard Stallman, had the goal 
+of creating a "complete Unix-compatible software system" composed entirely of free software
+. Work began in 1984.[35] Later, in 1985, Stallman started the Free Software Foundation and
+ wrote the GNU General Public License (GNU GPL) in 1989. By the early 1990s, many of the pr
+ograms required in an operating system (such as libraries, compilers, text editors, a Unix 
+shell, and a windowing system) were completed, although low-level elements such as device d
+rivers, daemons, and the kernel, called GNU/Hurd, were stalled and incomplete.[36]
+
+Linus Torvalds has stated that if the GNU kernel had been available at the time (1991), he 
+would not have decided to write his own.[37]
+
+Although not released until 1992, due to legal complications, development of 386BSD, from w
+hich NetBSD, OpenBSD and FreeBSD descended, predated that of Linux. Torvalds has also state
+d that if 386BSD had been available at the time, he probably would not have created Linux.[
+38]
+
+MINIX was created by Andrew S. Tanenbaum, a computer science professor, and released in 198
+7 as a minimal Unix-like operating system targeted at students and others who wanted to lea
+rn the operating system principles. Although the complete source code of MINIX was freely a
+vailable, the licensing terms prevented it from being free software until the licensing cha
+nged in April 2000.[
+student@T42:~/ajce/mca/intmca$ more -f linux.txt
+Linux (/ˈlɪnəks/ (About this soundlisten) LIN-əks)[9][10] is a family of free and open-source software operating systems based on the Linux kernel,[11] an operating system kernel first released on September 17, 1991 by Linus Torvalds.[12][13][14] Linux is typically packaged in a Linux distribution (or distro for short).
+
+Distributions include the Linux kernel and supporting system software and libraries, many of which are provided by the GNU Project. Many Linux distributions use the word "Linux" in their name, but the Free Software Foundation uses the name GNU/Linux to emphasize the importance of GNU software, causing some controversy.[15][16]
+
+Popular Linux distributions[17][18][19] include Debian, Fedora, and Ubuntu. Commercial distributions include Red Hat Enterprise Linux and SUSE Linux Enterprise Server. Desktop Linux distributions include a windowing system such as X11 or Wayland, and a desktop environment such as GNOME or KDE Plasma. Distributions intended for servers may omit graphics alto
+gether, and include a solution stack such as LAMP. Because Linux is freely redistributable, anyone may create a distribution for any purpose.
+
+Linux was originally developed for personal computers based on the Intel x86 architecture, but has since been ported to more platforms than any other operating system.[20] Linux is the leading operating system on servers and other big iron systems such as mainframe computers, and the only OS used on TOP500 supercomputers (since November 2017, having gradual
+ly eliminated all competitors).[21][22][23] It is used by around 2.3 percent of desktop computers.[24][25] The Chromebook, which runs the Linux kernel-based Chrome OS, dominates the US K–12 education market and represents nearly 20 percent of sub-$300 notebook sales in the US.[26]
+
+Linux also runs on embedded systems, i.e. devices whose operating system is typically built into the firmware and is highly tailored to the system. This includes routers, automation controls, televisions,[27][28] digital video recorders, video game consoles, and smartwatches.[29] Many smartphones and tablet computers run Android and other Linux derivatives.
+[30] Because of the dominance of Android on smartphones, Linux has the largest installed base of all general-purpose operating systems.[31]
+
+Linux is one of the most prominent examples of free and open-source software collaboration. The source code may be used, modified and distributed—commercially or non-commercially—by anyone under the terms of its respective licenses, such as the GNU General Public License. 
+
+
+The Unix operating system was conceived and implemented in 1969, at AT&T's Bell Laboratories in the United States by Ken Thompson, Dennis Ritchie, Douglas McIlroy, and Joe Ossanna.[32] First released in 1971, Unix was written entirely in assembly language, as was common practice at the time. Later, in a key pioneering approach in 1973, it was rewritten in t
+he C programming language by Dennis Ritchie (with the exception of some hardware and I/O routines). The availability of a high-level language implementation of Unix made its porting to different computer platforms easier.[33]
+
+Due to an earlier antitrust case forbidding it from entering the computer business, AT&T was required to license the operating system's source code to anyone who asked.[34] As a result, Unix grew quickly and became widely adopted by academic institutions and businesses. In 1984, AT&T divested itself of Bell Labs; freed of the legal obligation requiring free
+ licensing, Bell Labs began selling Unix as a proprietary product, where users were not legally allowed to modify Unix. The GNU Project, started in 1983 by Richard Stallman, had the goal of creating a "complete Unix-compatible software system" composed entirely of free software. Work began in 1984.[35] Later, in 1985, Stallman started the Free Software Foun
+dation and wrote the GNU General Public License (GNU GPL) in 1989. By the early 1990s, many of the programs required in an operating system (such as libraries, compilers, text editors, a Unix shell, and a windowing system) were completed, although low-level elements such as device drivers, daemons, and the kernel, called GNU/Hurd, were stalled and incomplet
+e.[36]
+
+Linus Torvalds has stated that if the GNU kernel had been available at the time (1991), he would not have decided to write his own.[37]
+
+Although not released until 1992, due to legal complications, development of 386BSD, from which NetBSD, OpenBSD and FreeBSD descended, predated that of Linux. Torvalds has also stated that if 386BSD had been available at the time, he probably would not have created Linux.[38]
+
+MINIX was created by Andrew S. Tanenbaum, a computer science professor, and released in 1987 as a minimal Unix-like operating system targeted at students and others who wanted to learn the operating system principles. Although the complete source code of MINIX was freely available, the licensing terms prevented it from being free software until the licensin
+g changed in April 2000.[
+student@T42:~/ajce/mca/intmca$ more -p linux.txt
+
+Linux (/ˈlɪnəks/ (About this soundlisten) LIN-əks)[9][10] is a family of free and open-sour
+Linux (/ˈlɪnəks/ (About this soundlisten) LIN-əks)[9][10] is a family of free and open-sour
+ce software operating systems based on the Linux kernel,[11] an operating system kernel fir
+st released on September 17, 1991 by Linus Torvalds.[12][13][14] Linux is typically package
+d in a Linux distribution (or distro for short).
+
+Distributions include the Linux kernel and supporting system software and libraries, many o
+f which are provided by the GNU Project. Many Linux distributions use the word "Linux" in t
+heir name, but the Free Software Foundation uses the name GNU/Linux to emphasize the import
+ance of GNU software, causing some controversy.[15][16]
+
+Popular Linux distributions[17][18][19] include Debian, Fedora, and Ubuntu. Commercial dist
+ributions include Red Hat Enterprise Linux and SUSE Linux Enterprise Server. Desktop Linux 
+distributions include a windowing system such as X11 or Wayland, and a desktop environment 
+such as GNOME or KDE Plasma. Distributions intended for servers may omit graphics altogethe
+r, and include a solution stack such as LAMP. Because Linux is freely redistributable, anyo
+ne may create a distribution for any purpose.
+
+Linux was originally developed for personal computers based on the Intel x86 architecture, 
+but has since been ported to more platforms than any other operating system.[20] Linux is t
+he leading operating system on servers and other big iron systems such as mainframe compute
+rs, and the only OS used on TOP500 supercomputers (since November 2017, having gradually el
+iminated all competitors).[21][22][23] It is used by around 2.3 percent of desktop computer
+s.[24][25] The Chromebook, which runs the Linux kernel-based Chrome OS, dominates the US K–
+12 education market and represents nearly 20 percent of sub-$300 notebook sales in the US.[
+26]
+student@T42:~/ajce/mca/intmca$ more -s linux.txt
+Linux (/ˈlɪnəks/ (About this soundlisten) LIN-əks)[9][10] is a family of free and open-sour
+ce software operating systems based on the Linux kernel,[11] an operating system kernel fir
+st released on September 17, 1991 by Linus Torvalds.[12][13][14] Linux is typically package
+d in a Linux distribution (or distro for short).
+
+Distributions include the Linux kernel and supporting system software and libraries, many o
+f which are provided by the GNU Project. Many Linux distributions use the word "Linux" in t
+heir name, but the Free Software Foundation uses the name GNU/Linux to emphasize the import
+ance of GNU software, causing some controversy.[15][16]
+
+Popular Linux distributions[17][18][19] include Debian, Fedora, and Ubuntu. Commercial dist
+ributions include Red Hat Enterprise Linux and SUSE Linux Enterprise Server. Desktop Linux 
+distributions include a windowing system such as X11 or Wayland, and a desktop environment 
+such as GNOME or KDE Plasma. Distributions intended for servers may omit graphics altogethe
+r, and include a solution stack such as LAMP. Because Linux is freely redistributable, anyo
+ne may create a distribution for any purpose.
+
+Linux was originally developed for personal computers based on the Intel x86 architecture, 
+but has since been ported to more platforms than any other operating system.[20] Linux is t
+he leading operating system on servers and other big iron systems such as mainframe compute
+rs, and the only OS used on TOP500 supercomputers (since November 2017, having gradually el
+iminated all competitors).[21][22][23] It is used by around 2.3 percent of desktop computer
+s.[24][25] The Chromebook, which runs the Linux kernel-based Chrome OS, dominates the US K–
+12 education market and represents nearly 20 percent of sub-$300 notebook sales in the US.[
+26]
+student@T42:~/ajce/mca/intmca$ more +/emphasize linux.txt
+Linux (/ˈlɪnəks/ (About this soundlisten) LIN-əks)[9][10] is a family of free and open-sour
+ce software operating systems based on the Linux kernel,[11] an operating system kernel fir
+st released on September 17, 1991 by Linus Torvalds.[12][13][14] Linux is typically package
+d in a Linux distribution (or distro for short).
+
+Distributions include the Linux kernel and supporting system software and libraries, many o
+f which are provided by the GNU Project. Many Linux distributions use the word "Linux" in t
+heir name, but the Free Software Foundation uses the name GNU/Linux to emphasize the import
+ance of GNU software, causing some controversy.[15][16]
+
+Popular Linux distributions[17][18][19] include Debian, Fedora, and Ubuntu. Commercial dist
+ributions include Red Hat Enterprise Linux and SUSE Linux Enterprise Server. Desktop Linux 
+distributions include a windowing system such as X11 or Wayland, and a desktop environment 
+such as GNOME or KDE Plasma. Distributions intended for servers may omit graphics altogethe
+r, and include a solution stack such as LAMP. Because Linux is freely redistributable, anyo
+ne may create a distribution for any purpose.
+
+Linux was originally developed for personal computers based on the Intel x86 architecture, 
+but has since been ported to more platforms than any other operating system.[20] Linux is t
+he leading operating system on servers and other big iron systems such as mainframe compute
+rs, and the only OS used on TOP500 supercomputers (since November 2017, having gradually el
+iminated all competitors).[21][22][23] It is used by around 2.3 percent of desktop computer
+s.[24][25] The Chromebook, which runs the Linux kernel-based Chrome OS, dominates the US K–
+12 education market and represents nearly 20 percent of sub-$300 notebook sales in the US.[
+26]
+student@T42:~/ajce/mca/intmca$ more +9 linux.txt
+Linux also runs on embedded systems, i.e. devices whose operating system is typically built
+ into the firmware and is highly tailored to the system. This includes routers, automation 
+controls, televisions,[27][28] digital video recorders, video game consoles, and smartwatch
+es.[29] Many smartphones and tablet computers run Android and other Linux derivatives.[30] 
+Because of the dominance of Android on smartphones, Linux has the largest installed base of
+ all general-purpose operating systems.[31]
+
+Linux is one of the most prominent examples of free and open-source software collaboration.
+ The source code may be used, modified and distributed—commercially or non-commercially—by 
+anyone under the terms of its respective licenses, such as the GNU General Public License. 
+
+
+The Unix operating system was conceived and implemented in 1969, at AT&T's Bell Laboratorie
+s in the United States by Ken Thompson, Dennis Ritchie, Douglas McIlroy, and Joe Ossanna.[3
+2] First released in 1971, Unix was written entirely in assembly language, as was common pr
+actice at the time. Later, in a key pioneering approach in 1973, it was rewritten in the C 
+programming language by Dennis Ritchie (with the exception of some hardware and I/O routine
+s). The availability of a high-level language implementation of Unix made its porting to di
+fferent computer platforms easier.[33]
+
+Due to an earlier antitrust case forbidding it from entering the computer business, AT&T wa
+s required to license the operating system's source code to anyone who asked.[34] As a resu
+lt, Unix grew quickly and became widely adopted by academic institutions and businesses. In
+ 1984, AT&T divested itself of Bell Labs; freed of the legal obligation requiring free lice
+nsing, Bell Labs began selling Unix as a proprietary product, where users were not legally 
+student@T42:~/ajce/mca/intmca$ cat linux.txt | more
+Linux (/ˈlɪnəks/ (About this soundlisten) LIN-əks)[9][10] is a family of free and open-sour
+ce software operating systems based on the Linux kernel,[11] an operating system kernel fir
+st released on September 17, 1991 by Linus Torvalds.[12][13][14] Linux is typically package
+d in a Linux distribution (or distro for short).
+
+Distributions include the Linux kernel and supporting system software and libraries, many o
+f which are provided by the GNU Project. Many Linux distributions use the word "Linux" in t
+heir name, but the Free Software Foundation uses the name GNU/Linux to emphasize the import
+ance of GNU software, causing some controversy.[15][16]
+
+Popular Linux distributions[17][18][19] include Debian, Fedora, and Ubuntu. Commercial dist
+ributions include Red Hat Enterprise Linux and SUSE Linux Enterprise Server. Desktop Linux 
+distributions include a windowing system such as X11 or Wayland, and a desktop environment 
+such as GNOME or KDE Plasma. Distributions intended for servers may omit graphics altogethe
+r, and include a solution stack such as LAMP. Because Linux is freely redistributable, anyo
+ne may create a distribution for any purpose.
+
+Linux was originally developed for personal computers based on the Intel x86 architecture, 
+but has since been ported to more platforms than any other operating system.[20] Linux is t
+he leading operating system on servers and other big iron systems such as mainframe compute
+rs, and the only OS used on TOP500 supercomputers (since November 2017, having gradually el
+iminated all competitors).[21][22][23] It is used by around 2.3 percent of desktop computer
+s.[24][25] The Chromebook, which runs the Linux kernel-based Chrome OS, dominates the US K–
+12 education market and represents nearly 20 percent of sub-$300 notebook sales in the US.[
+26]
+student@T42:~/ajce/mca/intmca$ man more
+student@T42:~/ajce/mca/intmca$ less linux.txt
+student@T42:~/ajce/mca/intmca$ less -e linux.txt
+student@T42:~/ajce/mca/intmca$ lee -n linux.txt
+
+Command 'lee' not found, did you mean:
+
+  command 'le' from deb le
+  command 'leg' from deb peg
+  command 'lpe' from deb lpe
+  command 'lie' from deb lie
+  command 'leye' from deb ruby-eye
+  command 'see' from deb mime-support
+  command 'lex' from deb flex
+  command 'lex' from deb flex-old
+  command 'tee' from deb coreutils
+  command 'ree' from deb ree
+  command 'pee' from deb moreutils
+  command 'les' from deb atm-tools
+  command 'leo' from deb libwww-dict-leo-org-perl
+
+Try: apt install <deb name>
+
+student@T42:~/ajce/mca/intmca$ less -n linux.txt
+student@T42:~/ajce/mca/intmca$ less -N linux.txt
+student@T42:~/ajce/mca/intmca$ less -m linux.txt
+student@T42:~/ajce/mca/intmca$ more linux.txt
+Linux (/ˈlɪnəks/ (About this soundlisten) LIN-əks)[9][10] is a family of free and open-sour
+ce software operating systems based on the Linux kernel,[11] an operating system kernel fir
+st released on September 17, 1991 by Linus Torvalds.[12][13][14] Linux is typically package
+d in a Linux distribution (or distro for short).
+
+Distributions include the Linux kernel and supporting system software and libraries, many o
+f which are provided by the GNU Project. Many Linux distributions use the word "Linux" in t
+heir name, but the Free Software Foundation uses the name GNU/Linux to emphasize the import
+ance of GNU software, causing some controversy.[15][16]
+
+Popular Linux distributions[17][18][19] include Debian, Fedora, and Ubuntu. Commercial dist
+ributions include Red Hat Enterprise Linux and SUSE Linux Enterprise Server. Desktop Linux 
+distributions include a windowing system such as X11 or Wayland, and a desktop environment 
+such as GNOME or KDE Plasma. Distributions intended for servers may omit graphics altogethe
+r, and include a solution stack such as LAMP. Because Linux is freely redistributable, anyo
+ne may create a distribution for any purpose.
+
+Linux was originally developed for personal computers based on the Intel x86 architecture, 
+but has since been ported to more platforms than any other operating system.[20] Linux is t
+he leading operating system on servers and other big iron systems such as mainframe compute
+rs, and the only OS used on TOP500 supercomputers (since November 2017, having gradually el
+iminated all competitors).[21][22][23] It is used by around 2.3 percent of desktop computer
+s.[24][25] The Chromebook, which runs the Linux kernel-based Chrome OS, dominates the US K–
+12 education market and represents nearly 20 percent of sub-$300 notebook sales in the US.[
+26]
+student@T42:~/ajce/mca/intmca$ less +/linux kernel linux.txt
+kernel: No such file or directory
+student@T42:~/ajce/mca/intmca$ less +/linux linux.txt
+student@T42:~/ajce/mca/intmca$ less +/Linux linux.txt
+student@T42:~/ajce/mca/intmca$ 
+

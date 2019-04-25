@@ -1,0 +1,210 @@
+student@T42:~$ cd subodhitha
+student@T42:~/subodhitha$ git init testrepo
+Reinitialized existing Git repository in /home/student/subodhitha/testrepo/.git/
+student@T42:~/subodhitha$ cd testrepo
+student@T42:~/subodhitha/testrepo$ git config user.name "retnarithu"
+student@T42:~/subodhitha/testrepo$ git config user.email "subodhithar@mca.ajce.in"
+student@T42:~/subodhitha/testrepo$ gedit addfile.txt
+student@T42:~/subodhitha/testrepo$ gedit addfile.txt
+student@T42:~/subodhitha/testrepo$ git addfile.txt
+git: 'addfile.txt' is not a git command. See 'git --help'.
+student@T42:~/subodhitha/testrepo$ git add addfile.txt
+student@T42:~/subodhitha/testrepo$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   addfile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	testrepo/
+
+student@T42:~/subodhitha/testrepo$ git commit -m "sample program"
+[master 5739f4e] sample program
+ 1 file changed, 4 insertions(+)
+ create mode 100644 addfile.txt
+student@T42:~/subodhitha/testrepo$ git remote add https://github.com/retnarithu/testrepo
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+student@T42:~/subodhitha/testrepo$ git remote add origin  https://github.com/retnarithu/testrepo
+fatal: remote origin already exists.
+student@T42:~/subodhitha/testrepo$ git push origin master
+Username for 'https://github.com': retnarithu
+Password for 'https://retnarithu@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 361 bytes | 361.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/retnarithu/testrepo
+   4a8c57a..5739f4e  master -> master
+student@T42:~/subodhitha/testrepo$ git clone https://github.com/retnarithu/testrepo
+fatal: destination path 'testrepo' already exists and is not an empty directory.
+student@T42:~/subodhitha/testrepo$ git rm sample.c
+rm 'sample.c'
+student@T42:~/subodhitha/testrepo$ git rm README
+rm 'README'
+student@T42:~/subodhitha/testrepo$ git clone https://github.com/retnarithu/testrepo
+fatal: destination path 'testrepo' already exists and is not an empty directory.
+student@T42:~/subodhitha/testrepo$ git branch newbranch
+student@T42:~/subodhitha/testrepo$ git checkout newbranch
+D	README
+D	sample.c
+Switched to branch 'newbranch'
+student@T42:~/subodhitha/testrepo$ git push origin newbranch
+Username for 'https://github.com': retnarithu
+Password for 'https://retnarithu@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'newbranch' on GitHub by visiting:
+remote:      https://github.com/retnarithu/testrepo/pull/new/newbranch
+remote: 
+To https://github.com/retnarithu/testrepo
+ * [new branch]      newbranch -> newbranch
+student@T42:~/subodhitha/testrepo$ git fetch origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/retnarithu/testrepo
+ * branch            master     -> FETCH_HEAD
+   5739f4e..c38e0e2  master     -> origin/master
+student@T42:~/subodhitha/testrepo$ git merge origin newbranch
+merge: origin - not something we can merge
+student@T42:~/subodhitha/testrepo$ git status
+On branch newbranch
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    README
+	deleted:    sample.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	testrepo/
+
+student@T42:~/subodhitha/testrepo$ git merge master
+Already up to date.
+student@T42:~/subodhitha/testrepo$ git pull origin master
+From https://github.com/retnarithu/testrepo
+ * branch            master     -> FETCH_HEAD
+Updating 5739f4e..c38e0e2
+Fast-forward
+ addfile.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+student@T42:~/subodhitha/testrepo$ git branch
+  master
+* newbranch
+student@T42:~/subodhitha/testrepo$ git checkout master
+D	README
+D	sample.c
+Switched to branch 'master'
+student@T42:~/subodhitha/testrepo$ git branch sample
+student@T42:~/subodhitha/testrepo$ git checkout sample
+D	README
+D	sample.c
+Switched to branch 'sample'
+student@T42:~/subodhitha/testrepo$ git push origin sample
+Username for 'https://github.com': retnarithu
+Password for 'https://retnarithu@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/retnarithu/testrepo/'
+student@T42:~/subodhitha/testrepo$ git push origin sample
+Username for 'https://github.com': retnarithu
+Password for 'https://retnarithu@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'sample' on GitHub by visiting:
+remote:      https://github.com/retnarithu/testrepo/pull/new/sample
+remote: 
+To https://github.com/retnarithu/testrepo
+ * [new branch]      sample -> sample
+student@T42:~/subodhitha/testrepo$ git branch sample2
+student@T42:~/subodhitha/testrepo$ git checkout sample2
+D	README
+D	sample.c
+Switched to branch 'sample2'
+student@T42:~/subodhitha/testrepo$ git push origin sample2
+Username for 'https://github.com': retnarithu
+Password for 'https://retnarithu@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'sample2' on GitHub by visiting:
+remote:      https://github.com/retnarithu/testrepo/pull/new/sample2
+remote: 
+To https://github.com/retnarithu/testrepo
+ * [new branch]      sample2 -> sample2
+student@T42:~/subodhitha/testrepo$ git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/retnarithu/testrepo
+   5739f4e..eb471b1  sample2    -> origin/sample2
+student@T42:~/subodhitha/testrepo$ git fetch origin sample2
+From https://github.com/retnarithu/testrepo
+ * branch            sample2    -> FETCH_HEAD
+student@T42:~/subodhitha/testrepo$ git merge sample2
+Already up to date.
+student@T42:~/subodhitha/testrepo$ git pull origin sample2
+From https://github.com/retnarithu/testrepo
+ * branch            sample2    -> FETCH_HEAD
+Updating 5739f4e..eb471b1
+error: Your local changes to the following files would be overwritten by merge:
+	sample.c
+Please commit your changes or stash them before you merge.
+Aborting
+student@T42:~/subodhitha/testrepo$ git branch
+  master
+  newbranch
+  sample
+* sample2
+student@T42:~/subodhitha/testrepo$ git fetch origin sample2
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/retnarithu/testrepo
+ * branch            sample2    -> FETCH_HEAD
+   eb471b1..24a0ddb  sample2    -> origin/sample2
+student@T42:~/subodhitha/testrepo$ git diff origin/sample2
+diff --git a/README b/README
+deleted file mode 100644
+index da17fb6..0000000
+--- a/README
++++ /dev/null
+@@ -1 +0,0 @@
+-C program
+diff --git a/addfile.txt b/addfile.txt
+index 946a208..06a3f35 100644
+--- a/addfile.txt
++++ b/addfile.txt
+@@ -1,5 +1,4 @@
+ for (( c=1; c<=5; c++ ))
+ do 
+ echo "Welcome $c times"
+-echo "hi"
+ done
+diff --git a/sample.c b/sample.c
+deleted file mode 100644
+index 8c6ee68..0000000
+--- a/sample.c
++++ /dev/null
+@@ -1,7 +0,0 @@
+:
+

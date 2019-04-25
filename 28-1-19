@@ -1,0 +1,37 @@
+student@T42:~$ echo welcome
+welcome
+student@T42:~$ read a
+4
+student@T42:~$ echo a
+a
+student@T42:~$ echo $a
+4
+student@T42:~$ man echo
+student@T42:~$ man echo
+student@T42:~$  read s
+23
+student@T42:~$ echo $s
+23
+student@T42:~$ man read
+student@T42:~$ echo -n
+student@T42:~$ echo -n sum
+sumstudent@T42:~$ echo -e sum
+sum
+student@T42:~$ man echo
+student@T42:~$ echo -E
+
+student@T42:~$ echo the value of a is $a
+the value of a is 4
+student@T42:~$ man read
+student@T42:~$ man man
+student@T42:~$ man ls
+student@T42:~$ read -p "enter the number:"
+enter the number:14
+student@T42:~$ echo the number is $a
+the number is 20
+student@T42:~$ read a b
+1 2
+student@T42:~$ echo $a $b
+1 2
+
+

@@ -1,0 +1,359 @@
+student@T42:~$ cd ajce
+student@T42:~/ajce$ cd mca
+student@T42:~/ajce/mca$ cd lmca
+student@T42:~/ajce/mca/lmca$ cd lmca
+bash: cd: lmca: No such file or directory
+student@T42:~/ajce/mca/lmca$ cat lmca
+cat: lmca: No such file or directory
+student@T42:~/ajce/mca/lmca$ cd ~
+student@T42:~$ cd ajce
+student@T42:~/ajce$ cd mca
+student@T42:~/ajce/mca$ cd lmca
+student@T42:~/ajce/mca/lmca$ cat sample.txt
+cat: sample.txt: No such file or directory
+student@T42:~/ajce/mca/lmca$ cat > sam.txt
+12 3 4 567 8997 a b s 
+^C
+student@T42:~/ajce/mca/lmca$ cat sam.txt
+12 3 4 567 8997 a b s 
+student@T42:~/ajce/mca/lmca$ touch file1.txt
+student@T42:~/ajce/mca/lmca$ cat file1.txt
+familiarization of linux commands
+student@T42:~/ajce/mca/lmca$ cat > file1.txt
+cd 
+cat
+mkdir
+ls
+^C
+student@T42:~/ajce/mca/lmca$ cat file1.txt sam.txt
+cd 
+cat
+mkdir
+ls
+12 3 4 567 8997 a b s 
+student@T42:~/ajce/mca/lmca$ cat  sam.txt >> file1.txt
+student@T42:~/ajce/mca/lmca$ cat file1.txt
+cd 
+cat
+mkdir
+ls
+12 3 4 567 8997 a b s 
+student@T42:~/ajce/mca/lmca$ man cat
+student@T42:~/ajce/mca/lmca$ cat course.txt
+cat: course.txt: No such file or directory
+student@T42:~/ajce/mca/lmca$ cat > coures.txt
+sd lab
+big data
+ml
+adbms
+
+^C
+student@T42:~/ajce/mca/lmca$ cat file1.txt course.txt
+cd 
+cat
+mkdir
+ls
+12 3 4 567 8997 a b s 
+cat: course.txt: No such file or directory
+student@T42:~/ajce/mca/lmca$ cat file1.txt coures.txt
+cd 
+cat
+mkdir
+ls
+12 3 4 567 8997 a b s 
+sd lab
+big data
+ml
+adbms
+
+student@T42:~/ajce/mca/lmca$ cat -n file1.txt
+     1	cd 
+     2	cat
+     3	mkdir
+     4	ls
+     5	12 3 4 567 8997 a b s 
+student@T42:~/ajce/mca/lmca$ cat -n coures.txt
+     1	sd lab
+     2	big data
+     3	ml
+     4	adbms
+     5	
+student@T42:~/ajce/mca/lmca$ cat file1.txt > sam.txt
+student@T42:~/ajce/mca/lmca$ cat sam.txt
+cd 
+cat
+mkdir
+ls
+12 3 4 567 8997 a b s 
+student@T42:~/ajce/mca/lmca$ cat *.txt
+sd lab
+big data
+ml
+adbms
+
+cd 
+cat
+mkdir
+ls
+12 3 4 567 8997 a b s 
+cd 
+cat
+mkdir
+ls
+12 3 4 567 8997 a b s 
+student@T42:~/ajce/mca/lmca$ cat sam.txt file1.txt > newfile.txt
+student@T42:~/ajce/mca/lmca$ cat newfile.txt
+cd 
+cat
+mkdir
+ls
+12 3 4 567 8997 a b s 
+cd 
+cat
+mkdir
+ls
+12 3 4 567 8997 a b s 
+student@T42:~/ajce/mca/lmca$ cat *.txt
+sd lab
+big data
+ml
+adbms
+
+cd 
+cat
+mkdir
+ls
+12 3 4 567 8997 a b s 
+cd 
+cat
+mkdir
+ls
+12 3 4 567 8997 a b s 
+cd 
+cat
+mkdir
+ls
+12 3 4 567 8997 a b s 
+cd 
+cat
+mkdir
+ls
+12 3 4 567 8997 a b s 
+student@T42:~/ajce/mca/lmca$ cat -n newfile.txt
+     1	cd 
+     2	cat
+     3	mkdir
+     4	ls
+     5	12 3 4 567 8997 a b s 
+     6	cd 
+     7	cat
+     8	mkdir
+     9	ls
+    10	12 3 4 567 8997 a b s 
+student@T42:~/ajce/mca/lmca$ cat -t newfile.txt
+cd 
+cat
+mkdir
+ls
+12 3 4 567 8997 a b s 
+cd 
+cat
+mkdir
+ls
+12 3 4 567 8997 a b s 
+student@T42:~/ajce/mca/lmca$ man cat
+student@T42:~/ajce/mca/lmca$ cat -T coures
+cat: coures: No such file or directory
+student@T42:~/ajce/mca/lmca$ cat -T coures.txt
+sd lab
+big data
+ml
+adbms
+
+student@T42:~/ajce/mca/lmca$ cat sam.txt; file1.txt; coures.txt; > new.txt
+cd 
+cat
+mkdir
+ls
+12 3 4 567 8997 a b s 
+file1.txt: command not found
+coures.txt: command not found
+student@T42:~/ajce/mca/lmca$ cat new.txt
+student@T42:~/ajce/mca/lmca$ cat > text1.txt
+helloworld
+welcome to amal jyothi
+
+college of engineering.
+
+^C
+student@T42:~/ajce/mca/lmca$ cat -s text1.txt
+helloworld
+welcome to amal jyothi
+
+college of engineering.
+
+student@T42:~/ajce/mca/lmca$ cat > text.txt
+hello
+
+
+world
+good morning
+^C
+student@T42:~/ajce/mca/lmca$ cat -s text.txt
+hello
+
+world
+good morning
+student@T42:~/ajce/mca/lmca$ cat > number.txt
+1 
+2
+34
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3
+5
+7
+
+8^C
+student@T42:~/ajce/mca/lmca$ cat -n number.txt
+     1	1 
+     2	2
+     3	34
+     4	
+     5	
+     6	
+     7	
+     8	
+     9	
+    10	
+    11	
+    12	
+    13	
+    14	
+    15	
+    16	
+    17	
+    18	
+    19	
+    20	
+    21	3
+    22	5
+    23	7
+    24	
+student@T42:~/ajce/mca/lmca$ cat -s number.txt
+1 
+2
+34
+
+3
+5
+7
+
+student@T42:~/ajce/mca/lmca$ cat > student.txt
+hi          good morning
+^C
+student@T42:~/ajce/mca/lmca$ cat -T student.txt
+hi          good morning
+student@T42:~/ajce/mca/lmca$ man cat
+student@T42:~/ajce/mca/lmca$ cat > stud.txt
+kanjirapally	koovappally
+^C
+student@T42:~/ajce/mca/lmca$ cat -t stud.txt
+kanjirapally^Ikoovappally
+student@T42:~/ajce/mca/lmca$ man cat
+student@T42:~/ajce/mca/lmca$ cat -b student.txt
+     1	hi          good morning
+student@T42:~/ajce/mca/lmca$ man cat
+student@T42:~/ajce/mca/lmca$ cat -v stud.txt
+kanjirapally	koovappally
+student@T42:~/ajce/mca/lmca$ cat -e stud.txt
+kanjirapally	koovappally$
+student@T42:~/ajce/mca/lmca$ mv lmca rmca
+mv: cannot stat 'lmca': No such file or directory
+student@T42:~/ajce/mca/lmca$ cd ..
+student@T42:~/ajce/mca$ mv lmca rmca
+student@T42:~/ajce/mca$ ls rmca
+lmca
+student@T42:~/ajce/mca$ man mv
+student@T42:~/ajce/mca$ ls
+intmca  out.txt  rmca
+student@T42:~/ajce/mca$ man mv
+student@T42:~/ajce/mca$ cd rmca
+student@T42:~/ajce/mca/rmca$ cd lmca
+student@T42:~/ajce/mca/rmca/lmca$ ls
+coures.txt  file1.txt    new.txt     sam.txt      stud.txt   text.txt
+course      newfile.txt  number.txt  student.txt  text1.txt
+student@T42:~/ajce/mca/rmca/lmca$ mv text.txt course
+student@T42:~/ajce/mca/rmca/lmca$ ls course
+text.txt
+student@T42:~/ajce/mca/rmca/lmca$ ls
+coures.txt  file1.txt    new.txt     sam.txt      stud.txt
+course      newfile.txt  number.txt  student.txt  text1.txt
+student@T42:~/ajce/mca/rmca/lmca$ cat sample2.txt
+cat: sample2.txt: No such file or directory
+student@T42:~/ajce/mca/rmca/lmca$ cat > sample.txt
+hello 
+^C
+student@T42:~/ajce/mca/rmca/lmca$ cat text1.txt
+helloworld
+welcome to amal jyothi
+
+college of engineering.
+
+student@T42:~/ajce/mca/rmca/lmca$ mv sample.txt text1.txt
+student@T42:~/ajce/mca/rmca/lmca$ cat text1.txt
+hello
+student@T42:~/ajce/mca/rmca/lmca$ ls
+coures.txt  file1.txt    new.txt     sam.txt      stud.txt
+course      newfile.txt  number.txt  student.txt  text1.txt
+student@T42:~/ajce/mca/rmca/lmca$ mv coures.txt file1.txt new.txt course
+student@T42:~/ajce/mca/rmca/lmca$ ls course
+coures.txt  file1.txt  new.txt  text.txt
+student@T42:~/ajce/mca/rmca/lmca$ mv *.txt course
+student@T42:~/ajce/mca/rmca/lmca$ ls course
+coures.txt  newfile.txt  number.txt  student.txt  text1.txt
+file1.txt   new.txt      sam.txt     stud.txt     text.txt
+student@T42:~/ajce/mca/rmca/lmca$ mv -i sample.txt text1.txt
+mv: cannot stat 'sample.txt': No such file or directory
+student@T42:~/ajce/mca/rmca/lmca$ mv -i sam.txt new.txt
+mv: cannot stat 'sam.txt': No such file or directory
+student@T42:~/ajce/mca/rmca/lmca$ cd course
+student@T42:~/ajce/mca/rmca/lmca/course$ mv -i sample.txt text1.txt
+mv: cannot stat 'sample.txt': No such file or directory
+student@T42:~/ajce/mca/rmca/lmca/course$ cd ..
+student@T42:~/ajce/mca/rmca/lmca$ mv course intmca
+student@T42:~/ajce/mca/rmca/lmca$ ls intmca
+coures.txt  newfile.txt  number.txt  student.txt  text1.txt
+file1.txt   new.txt      sam.txt     stud.txt     text.txt
+student@T42:~/ajce/mca/rmca/lmca$ ls
+intmca
+student@T42:~/ajce/mca/rmca/lmca$ mv coures.txt file1.txt new.txt intmca
+mv: cannot stat 'coures.txt': No such file or directory
+mv: cannot stat 'file1.txt': No such file or directory
+mv: cannot stat 'new.txt': No such file or directory
+student@T42:~/ajce/mca/rmca/lmca$ cd ..
+student@T42:~/ajce/mca/rmca$ cd ..
+student@T42:~/ajce/mca$ mv course rmca
+mv: cannot stat 'course': No such file or directory
+student@T42:~/ajce/mca$ cd rmca
+student@T42:~/ajce/mca/rmca$ mv course lmcca
+mv: cannot stat 'course': No such file or directory
+student@T42:~/ajce/mca/rmca$ mv lmca mca
+student@T42:~/ajce/mca/rmca$ mv mca lmca
+student@T42:~/ajce/mca/rmca$ 
+

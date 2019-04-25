@@ -1,0 +1,169 @@
+student@T42:~$ mkdir ajce
+student@T42:~$ cd ajce
+student@T42:~/ajce$ mkdir mca
+student@T42:~/ajce$ cd mca
+student@T42:~/ajce/mca$ pwd
+/home/student/ajce/mca
+student@T42:~/ajce/mca$ mkdir lmca
+student@T42:~/ajce/mca$ mkdir rmca
+student@T42:~/ajce/mca$ mkdir intmca
+student@T42:~/ajce/mca$ cd rmca
+student@T42:~/ajce/mca/rmca$ cd ..
+student@T42:~/ajce/mca$ cd ~
+student@T42:~$ cd /
+student@T42:/$ pwd
+/
+student@T42:/$ cd ajce
+bash: cd: ajce: No such file or directory
+student@T42:/$ cd ajce
+bash: cd: ajce: No such file or directory
+student@T42:/$ cd mca
+bash: cd: mca: No such file or directory
+student@T42:/$ cd ~
+student@T42:~$ cd ajce
+student@T42:~/ajce$ cd mca
+student@T42:~/ajce/mca$ cd le
+bash: cd: le: No such file or directory
+student@T42:~/ajce/mca$ cd lmca
+student@T42:~/ajce/mca/lmca$ pwd
+/home/student/ajce/mca/lmca
+student@T42:~/ajce/mca/lmca$ cd /
+student@T42:/$ mkdir course
+mkdir: cannot create directory ‘course’: Permission denied
+student@T42:/$ cd ~
+student@T42:~$ mkdir course
+student@T42:~$ cd course
+student@T42:~/course$ mkdir mca
+student@T42:~/course$ cd mca
+student@T42:~/course/mca$ cd ..
+student@T42:~/course$ cd ~
+student@T42:~$ cd ajce
+student@T42:~/ajce$ cd mca
+student@T42:~/ajce/mca$ ls
+intmca  lmca  rmca
+student@T42:~/ajce/mca$ ls -l
+total 12
+drwxr-xr-x 2 student student 4096 Jan 31 20:05 intmca
+drwxr-xr-x 2 student student 4096 Jan 31 20:05 lmca
+drwxr-xr-x 2 student student 4096 Jan 31 20:05 rmca
+student@T42:~/ajce/mca$ ls -l
+total 12
+drwxr-xr-x 2 student student 4096 Jan 31 20:05 intmca
+drwxr-xr-x 2 student student 4096 Jan 31 20:05 lmca
+drwxr-xr-x 2 student student 4096 Jan 31 20:05 rmca
+student@T42:~/ajce/mca$ ls >out.txt
+student@T42:~/ajce/mca$ ls /
+bin    etc             lib         mnt   run   stage2.img  var
+boot   home            lib64       opt   sbin  sys         vmlinuz
+cdrom  initrd.img      lost+found  proc  snap  tmp         vmlinuz.old
+dev    initrd.img.old  media       root  srv   usr
+student@T42:~/ajce/mca$ ls ajce/mca
+ls: cannot access 'ajce/mca': No such file or directory
+student@T42:~/ajce/mca$ cd ..
+student@T42:~/ajce$ ls ajce/mca
+ls: cannot access 'ajce/mca': No such file or directory
+student@T42:~/ajce$ cd ..
+student@T42:~$ ls ajce/mca
+intmca  lmca  out.txt  rmca
+student@T42:~$ ls ..
+android  mca  student
+student@T42:~$ ls ~
+ajce       Downloads         Music            ruby             Videos
+course     examples.desktop  Pictures         snap
+Desktop    familiarisation   Public           Templates
+Documents  first.html        PycharmProjects  validation.html
+student@T42:~$ cd ajce
+student@T42:~/ajce$ mca/lmca
+bash: mca/lmca: Is a directory
+student@T42:~/ajce$ cd mca
+student@T42:~/ajce/mca$ cd lmca
+student@T42:~/ajce/mca/lmca$ mkdir course
+student@T42:~/ajce/mca/lmca$ cd course
+student@T42:~/ajce/mca/lmca/course$ cd ..
+student@T42:~/ajce/mca/lmca$ cd..
+cd..: command not found
+student@T42:~/ajce/mca/lmca$ cd ..
+student@T42:~/ajce/mca$ cd ..
+student@T42:~/ajce$ ls mca/lmca
+course
+student@T42:~/ajce$ ls
+mca
+student@T42:~/ajce$ ls -t
+mca
+student@T42:~/ajce$ cd ..
+student@T42:~$ ls 
+ajce       Downloads         Music            ruby             Videos
+course     examples.desktop  Pictures         snap
+Desktop    familiarisation   Public           Templates
+Documents  first.html        PycharmProjects  validation.html
+student@T42:~$ ls -t
+course           PycharmProjects  Downloads  Pictures   examples.desktop
+ajce             first.html       ruby       Public
+familiarisation  Desktop          snap       Templates
+Documents        validation.html  Music      Videos
+student@T42:~$ ls -s
+total 76
+ 4 ajce       12 examples.desktop   4 Public            4 validation.html
+ 4 course      4 familiarisation    4 PycharmProjects   4 Videos
+ 4 Desktop     4 first.html         4 ruby
+ 4 Documents   4 Music              4 snap
+ 4 Downloads   4 Pictures           4 Templates
+student@T42:~$ ls *
+examples.desktop  familiarisation  first.html  validation.html
+
+ajce:
+mca
+
+course:
+mca
+
+Desktop:
+exam.56  wschool
+
+Documents:
+'sd lab'
+
+Downloads:
+'formvalidation(1).html'   formvalidation.html   val1.html
+
+Music:
+
+Pictures:
+
+Public:
+
+PycharmProjects:
+database  untitled
+
+ruby:
+fact.rb  palindrome.html
+
+snap:
+pycharm-community
+
+Templates:
+
+Videos:
+student@T42:~$ ls -d */
+ajce/     Documents/  Pictures/         ruby/       Videos/
+course/   Downloads/  Public/           snap/
+Desktop/  Music/      PycharmProjects/  Templates/
+student@T42:~$ ls -d $pwd/*
+/bin    /etc             /lib         /mnt   /run   /stage2.img  /var
+/boot   /home            /lib64       /opt   /sbin  /sys         /vmlinuz
+/cdrom  /initrd.img      /lost+found  /proc  /snap  /tmp         /vmlinuz.old
+/dev    /initrd.img.old  /media       /root  /srv   /usr
+student@T42:~$ cd ajce
+student@T42:~/ajce$ man pwd
+student@T42:~/ajce$ man cd
+No manual entry for cd
+student@T42:~/ajce$ man mkdir
+student@T42:~/ajce$ man mkdir
+student@T42:~/ajce$ man pwd
+student@T42:~/ajce$ man man pwd
+--Man-- next: pwd(1) [ view (return) | skip (Ctrl-D) | quit (Ctrl-C) ]
+man pwd
+student@T42:~/ajce$ man ls
+student@T42:~/ajce$ man ls
+student@T42:~/ajce$ 
+

@@ -1,0 +1,175 @@
+student@T42:~$ mkdir ajce
+student@T42:~$ cd ajce
+student@T42:~/ajce$ mkdir mca
+student@T42:~/ajce$ cd mca
+student@T42:~/ajce/mca$ mkdir lmca
+student@T42:~/ajce/mca$ mkdir rmca
+student@T42:~/ajce/mca$ mkdir intmca
+student@T42:~/ajce/mca$ cd lmca
+student@T42:~/ajce/mca/lmca$ cat > stud
+hello world
+welcome
+^C
+student@T42:~/ajce/mca/lmca$ cat stud
+hello world
+welcome
+student@T42:~/ajce/mca/lmca$ cat > a.txt
+welcome to the college
+^C
+student@T42:~/ajce/mca/lmca$ cat a.txt
+welcome to the college
+student@T42:~/ajce/mca/lmca$ cat > b.txt
+amal jyothi college of engineering
+kanjirappally
+^C
+student@T42:~/ajce/mca/lmca$ cat b.txt
+amal jyothi college of engineering
+kanjirappally
+student@T42:~/ajce/mca/lmca$ ls
+a.txt  b.txt  stud
+student@T42:~/ajce/mca/lmca$ cp a.txt b.txt
+student@T42:~/ajce/mca/lmca$ cat b.txt
+welcome to the college
+student@T42:~/ajce/mca/lmca$ ls
+a.txt  b.txt  stud
+student@T42:~/ajce/mca/lmca$ cat a.txt
+welcome to the college
+student@T42:~/ajce/mca/lmca$ cat b.txt
+welcome to the college
+student@T42:~/ajce/mca/lmca$ man cp
+student@T42:~/ajce/mca/lmca$ cat > c.txt 
+courses
+^C
+student@T42:~/ajce/mca/lmca$ cat > d.txt
+welcome
+^C
+student@T42:~/ajce/mca/lmca$ cd ..
+student@T42:~/ajce/mca$ ls
+intmca  lmca  rmca
+student@T42:~/ajce/mca$ cd lmca
+student@T42:~/ajce/mca/lmca$ ls
+a.txt  b.txt  c.txt  d.txt  stud
+student@T42:~/ajce/mca/lmca$ cp -b c.txt d.txt
+student@T42:~/ajce/mca/lmca$ cat d.txt
+courses
+student@T42:~/ajce/mca/lmca$ ls
+a.txt  b.txt  c.txt  d.txt  d.txt~  stud
+student@T42:~/ajce/mca/lmca$ cat d.txt~
+welcome
+student@T42:~/ajce/mca/lmca$ cp a.txt b.txt c.txt stud
+cp: target 'stud' is not a directory
+student@T42:~/ajce/mca/lmca$ cp a.txt b.txt c.txt rmca
+cp: target 'rmca' is not a directory
+student@T42:~/ajce/mca/lmca$ cd ..
+student@T42:~/ajce/mca$ cp a.txt b.txt c.txt rmca
+cp: cannot stat 'a.txt': No such file or directory
+cp: cannot stat 'b.txt': No such file or directory
+cp: cannot stat 'c.txt': No such file or directory
+student@T42:~/ajce/mca$ cd lmca
+student@T42:~/ajce/mca/lmca$ cat > f/
+bash: f/: Is a directory
+student@T42:~/ajce/mca/lmca$ mkdir f
+student@T42:~/ajce/mca/lmca$ ls
+a.txt  b.txt  c.txt  d.txt  d.txt~  f  stud
+student@T42:~/ajce/mca/lmca$ cp a.txt b.txt c.txt f
+student@T42:~/ajce/mca/lmca$ ls f
+a.txt  b.txt  c.txt
+student@T42:~/ajce/mca/lmca$ cp *.txt f
+student@T42:~/ajce/mca/lmca$ ls f
+a.txt  b.txt  c.txt  d.txt
+student@T42:~/ajce/mca/lmca$ mkdir d
+student@T42:~/ajce/mca/lmca$ cp f d
+cp: -r not specified; omitting directory 'f'
+student@T42:~/ajce/mca/lmca$ cp -r f d
+student@T42:~/ajce/mca/lmca$ ls d
+f
+student@T42:~/ajce/mca/lmca$ ls
+a.txt  b.txt  c.txt  d  d.txt  d.txt~  f  stud
+student@T42:~/ajce/mca/lmca$ cp -s .bak a.txt b.txt
+cp: target 'b.txt' is not a directory
+student@T42:~/ajce/mca/lmca$ cat > e.txt
+^C
+student@T42:~/ajce/mca/lmca$ cp -s .bak a.txt e.txt
+cp: target 'e.txt' is not a directory
+student@T42:~/ajce/mca/lmca$ cd ..
+student@T42:~/ajce/mca$ cd rmca
+student@T42:~/ajce/mca/rmca$ cat e.txt
+cat: e.txt: No such file or directory
+student@T42:~/ajce/mca/rmca$ cat > e.txt
+asdfgh^C
+student@T42:~/ajce/mca/rmca$ ^C
+student@T42:~/ajce/mca/rmca$ cat > j.txt
+abd
+^C
+student@T42:~/ajce/mca/rmca$ ls
+e.txt  j.txt
+student@T42:~/ajce/mca/rmca$ cp -S .bak e.txt j.txt
+student@T42:~/ajce/mca/rmca$ ls
+e.txt  j.txt  j.txt.bak
+student@T42:~/ajce/mca/rmca$ cat j.txt
+student@T42:~/ajce/mca/rmca$ cat j.txt.bak
+abd
+student@T42:~/ajce/mca/rmca$ ls
+e.txt  j.txt  j.txt.bak
+student@T42:~/ajce/mca/rmca$ cp -i e.txt j.txt
+cp: overwrite 'j.txt'? n
+student@T42:~/ajce/mca/rmca$ cat j.txt
+student@T42:~/ajce/mca/rmca$ cat > j.txt
+as
+ddfgg
+sdf
+^C
+student@T42:~/ajce/mca/rmca$ cp -i e.txt j.txt
+cp: overwrite 'j.txt'? y
+student@T42:~/ajce/mca/rmca$ cat j.txt
+student@T42:~/ajce/mca/rmca$ cat > j.txt
+sag
+rgdfth
+gfhj
+^C
+student@T42:~/ajce/mca/rmca$ cat j.txt
+sag
+rgdfth
+gfhj
+student@T42:~/ajce/mca/rmca$ cp -i e.txt j.txt
+cp: overwrite 'j.txt'? y
+student@T42:~/ajce/mca/rmca$ cat j.txt
+student@T42:~/ajce/mca/rmca$ cat e.txt
+student@T42:~/ajce/mca/rmca$ man cp
+student@T42:~/ajce/mca/rmca$ cat > d.txt
+a
+s
+d
+df
+g
+^C
+student@T42:~/ajce/mca/rmca$ cat > a.txt
+a
+c
+v
+b
+^C
+student@T42:~/ajce/mca/rmca$ cp -f d.txt a.txt
+student@T42:~/ajce/mca/rmca$ cat a.txt
+a
+s
+d
+df
+g
+student@T42:~/ajce/mca/rmca$ cp -L a.txt d.txt
+student@T42:~/ajce/mca/rmca$ cat d.txt
+a
+s
+d
+df
+g
+student@T42:~/ajce/mca/rmca$ cat > s.txt
+add
+^C
+student@T42:~/ajce/mca/rmca$ cp -L s.txt d.txt
+student@T42:~/ajce/mca/rmca$ cat d.txt
+add
+student@T42:~/ajce/mca/rmca$ ls
+a.txt  d.txt  e.txt  j.txt  j.txt.bak  s.txt
+student@T42:~/ajce/mca/rmca$ 
+

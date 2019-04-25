@@ -1,0 +1,332 @@
+student@T42:~$ cd ajce
+student@T42:~/ajce$ cd mca
+student@T42:~/ajce/mca$ cd lmca
+student@T42:~/ajce/mca/lmca$ ls
+a.txt  b.txt  d  d.txt~  f  stud
+student@T42:~/ajce/mca/lmca$ mkdir d
+mkdir: cannot create directory ‘d’: File exists
+student@T42:~/ajce/mca/lmca$ mkdir e
+student@T42:~/ajce/mca/lmca$ mkdir t
+student@T42:~/ajce/mca/lmca$ mkdir c
+student@T42:~/ajce/mca/lmca$ ls f
+a.txt  b.txt  c.txt  d.txt
+student@T42:~/ajce/mca/lmca$ pwd 
+/home/student/ajce/mca/lmca
+student@T42:~/ajce/mca/lmca$ cp -r e t c /home/student/ajce/mca/lmca/f
+student@T42:~/ajce/mca/lmca$ ls f
+a.txt  b.txt  c  c.txt  d.txt  e  t
+student@T42:~/ajce/mca/lmca$ man rm
+student@T42:~/ajce/mca/lmca$ rm -d
+rm: missing operand
+Try 'rm --help' for more information.
+student@T42:~/ajce/mca/lmca$ rm
+rm: missing operand
+Try 'rm --help' for more information.
+student@T42:~/ajce/mca/lmca$ man rm
+student@T42:~/ajce/mca/lmca$ ls -l
+total 36
+-rw-r--r-- 1 student student   23 Feb 11 16:48 a.txt
+-rw-r--r-- 1 student student   23 Feb 11 16:50 b.txt
+drwxr-xr-x 2 student student 4096 Feb 16 16:46 c
+drwxr-xr-x 3 student student 4096 Feb 11 17:07 d
+-rw-r--r-- 1 student student    8 Feb 11 16:54 d.txt~
+drwxr-xr-x 2 student student 4096 Feb 16 16:46 e
+drwxr-xr-x 5 student student 4096 Feb 16 16:48 f
+-rw-r--r-- 1 student student   20 Feb 11 16:47 stud
+drwxr-xr-x 2 student student 4096 Feb 16 16:46 t
+student@T42:~/ajce/mca/lmca$ ls -a
+.  ..  a.txt  b.txt  c  d  d.txt~  e  f  stud  t
+student@T42:~/ajce/mca/lmca$ ls -t
+f  c  t  e  d  d.txt~  b.txt  a.txt  stud
+student@T42:~/ajce/mca/lmca$ cat > l.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+^C
+student@T42:~/ajce/mca/lmca$ cat l.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+student@T42:~/ajce/mca/lmca$ wc l.txt
+10 10 21 l.txt
+student@T42:~/ajce/mca/lmca$ wc -l l.txt
+10 l.txt
+student@T42:~/ajce/mca/lmca$ wc -c l.txt
+21 l.txt
+student@T42:~/ajce/mca/lmca$ wc -m l.txt
+21 l.txt
+student@T42:~/ajce/mca/lmca$ man wc
+student@T42:~/ajce/mca/lmca$ wc -L l.txt
+2 l.txt
+student@T42:~/ajce/mca/lmca$ wc -w l.txt
+10 l.txt
+student@T42:~/ajce/mca/lmca$ man wc
+student@T42:~/ajce/mca/lmca$ ls
+a.txt  b.txt  c  d  d.txt~  e  f  l.txt  stud  t
+student@T42:~/ajce/mca/lmca$ cd e
+student@T42:~/ajce/mca/lmca/e$ ls
+student@T42:~/ajce/mca/lmca/e$ cat > a.txt
+apple 
+orange
+grapes
+hello world
+^C
+student@T42:~/ajce/mca/lmca/e$ wc a.txt
+ 4  5 33 a.txt
+student@T42:~/ajce/mca/lmca/e$ wc -l a.txt
+4 a.txt
+student@T42:~/ajce/mca/lmca/e$ wc -m a.txt
+33 a.txt
+student@T42:~/ajce/mca/lmca/e$ wc -c a.txt
+33 a.txt
+student@T42:~/ajce/mca/lmca/e$ wc -L a.txt
+11 a.txt
+student@T42:~/ajce/mca/lmca/e$ wc -w a.txt
+5 a.txt
+student@T42:~/ajce/mca/lmca/e$ man wc
+student@T42:~/ajce/mca/lmca/e$ cat > d.txt
+india is my country
+^C
+student@T42:~/ajce/mca/lmca/e$ wc d.txt
+ 1  4 20 d.txt
+student@T42:~/ajce/mca/lmca/e$ wc -l d.txt
+1 d.txt
+student@T42:~/ajce/mca/lmca/e$ wc -c d.txt
+20 d.txt
+student@T42:~/ajce/mca/lmca/e$ wc -m d.txt
+20 d.txt
+student@T42:~/ajce/mca/lmca/e$ wc -w d.txt
+4 d.txt
+student@T42:~/ajce/mca/lmca/e$ wc -
+^C
+student@T42:~/ajce/mca/lmca/e$ wc -L d.txt
+19 d.txt
+student@T42:~/ajce/mca/lmca/e$ man wc
+student@T42:~/ajce/mca/lmca/e$ man wc
+student@T42:~/ajce/mca/lmca/e$ wc a.txt
+ 4  5 33 a.txt
+student@T42:~/ajce/mca/lmca/e$ wcd.txt
+wcd.txt: command not found
+student@T42:~/ajce/mca/lmca/e$ wc a.txt
+ 4  5 33 a.txt
+student@T42:~/ajce/mca/lmca/e$ wc d.txt
+ 1  4 20 d.txt
+student@T42:~/ajce/mca/lmca/e$ wc a.txt d.txt
+ 4  5 33 a.txt
+ 1  4 20 d.txt
+ 5  9 53 total
+student@T42:~/ajce/mca/lmca/e$ cat > v.txt
+hello world
+amal jyothi college of engineering
+india is my country
+^C
+student@T42:~/ajce/mca/lmca/e$ wc -l v.txt
+3 v.txt
+student@T42:~/ajce/mca/lmca/e$ wc -c v.txt
+67 v.txt
+student@T42:~/ajce/mca/lmca/e$ wc -m v.txt
+67 v.txt
+student@T42:~/ajce/mca/lmca/e$ wc -L v.ttx
+wc: v.ttx: No such file or directory
+student@T42:~/ajce/mca/lmca/e$ wc -L v.txt
+34 v.txt
+student@T42:~/ajce/mca/lmca/e$ wc -w v.txt
+11 v.txt
+student@T42:~/ajce/mca/lmca/e$ cut -c 4 d.txt
+i
+student@T42:~/ajce/mca/lmca/e$ cut d.txt
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+student@T42:~/ajce/mca/lmca/e$ cut -c6 d.txt
+ 
+student@T42:~/ajce/mca/lmca/e$ cut -c1 d.txt
+i
+student@T42:~/ajce/mca/lmca/e$ cut -c4 d.txt
+i
+student@T42:~/ajce/mca/lmca/e$ cut -c5 d.txt
+a
+student@T42:~/ajce/mca/lmca/e$ cut -c2 d.txt
+n
+student@T42:~/ajce/mca/lmca/e$ cat > state.txt
+andhra pradesh
+arunachal pradesh
+assam
+bihar
+chhattisgarh
+cut -b 1,2,3 state.txt
+^C
+student@T42:~/ajce/mca/lmca/e$ cut -b 1,2,3 state.txt
+and
+aru
+ass
+bih
+chh
+
+student@T42:~/ajce/mca/lmca/e$ cut -b 1-3,5-7 state.txt
+andra 
+aruach
+assm
+bihr
+chhtti
+
+student@T42:~/ajce/mca/lmca/e$ cut -b l- state.txt
+cut: invalid byte/character position ‘l-’
+Try 'cut --help' for more information.
+student@T42:~/ajce/mca/lmca/e$ cut -b 1- state.txt
+andhra pradesh
+arunachal pradesh
+assam
+bihar
+chhattisgarh
+
+student@T42:~/ajce/mca/lmca/e$ cut -b 3- state.txt
+dhra pradesh
+unachal pradesh
+sam
+har
+hattisgarh
+
+student@T42:~/ajce/mca/lmca/e$ cut -b -3 state.txt
+and
+aru
+ass
+bih
+chh
+
+student@T42:~/ajce/mca/lmca/e$ cut -f 1 state.txt
+andhra pradesh
+arunachal pradesh
+assam
+bihar
+chhattisgarh
+
+student@T42:~/ajce/mca/lmca/e$ cut -d " " -f 1 state.txt
+andhra
+arunachal
+assam
+bihar
+chhattisgarh
+
+student@T42:~/ajce/mca/lmca/e$ cut -d " " -f 1,2 state.txt --output-delimiter='%'
+andhra%pradesh
+arunachal%pradesh
+assam
+bihar
+chhattisgarh
+
+student@T42:~/ajce/mca/lmca/e$ cat > st.txt
+hello	world
+^C
+student@T42:~/ajce/mca/lmca/e$ cut -f 1 st.txt
+hello
+student@T42:~/ajce/mca/lmca/e$ cut -f 2 st.txt
+world
+student@T42:~/ajce/mca/lmca/e$ cut -f 1,2 st.txt
+hello	world
+student@T42:~/ajce/mca/lmca/e$ man cut
+student@T42:~/ajce/mca/lmca/e$ cat > x.txt
+aaa	bbb cccc 	ddd
+12	34	45
+^C
+student@T42:~/ajce/mca/lmca/e$ cut -c 1 x.txt
+a
+1
+student@T42:~/ajce/mca/lmca/e$ cut -f 1 x.txt
+aaa
+12
+student@T42:~/ajce/mca/lmca/e$ cut -b 1 x.txt
+a
+1
+student@T42:~/ajce/mca/lmca/e$ cat -b 1-3 x.txt
+cat: 1-3: No such file or directory
+     1	aaa	bbb cccc 	ddd
+     2	12	34	45
+student@T42:~/ajce/mca/lmca/e$ cut -b 1-3 x.txt
+aaa
+12	
+student@T42:~/ajce/mca/lmca/e$ cut -f 4 x.txt
+
+
+student@T42:~/ajce/mca/lmca/e$ cut -f 3 x.txt
+ddd
+45
+student@T42:~/ajce/mca/lmca/e$ cut -c 4,5,6 x.txt
+	bb
+34	
+student@T42:~/ajce/mca/lmca/e$ cd /
+student@T42:/$ cd ~
+student@T42:~$ echo -e "hello \h world"
+hello \h world
+student@T42:~$ echo -n "hello \n world"
+hello \n worldstudent@T42:~$ echo "hello \h world"
+hello \h world
+student@T42:~$ echo -e "hello \b world"
+hello world
+student@T42:~$ echo -n "hello "
+hello student@T42:~$ ls ..
+android  mca  student
+student@T42:~$ ls mca
+ls: cannot access 'mca': No such file or directory
+student@T42:~$ cd ajce
+student@T42:~/ajce$ cd mca
+student@T42:~/ajce/mca$ cd lmca
+student@T42:~/ajce/mca/lmca$ ls -l
+total 40
+-rw-r--r-- 1 student student   23 Feb 11 16:48 a.txt
+-rw-r--r-- 1 student student   23 Feb 11 16:50 b.txt
+drwxr-xr-x 2 student student 4096 Feb 16 16:46 c
+drwxr-xr-x 3 student student 4096 Feb 11 17:07 d
+-rw-r--r-- 1 student student    8 Feb 11 16:54 d.txt~
+drwxr-xr-x 2 student student 4096 Feb 16 18:11 e
+drwxr-xr-x 5 student student 4096 Feb 16 16:48 f
+-rw-r--r-- 1 student student   21 Feb 16 17:01 l.txt
+-rw-r--r-- 1 student student   20 Feb 11 16:47 stud
+drwxr-xr-x 2 student student 4096 Feb 16 16:46 t
+student@T42:~/ajce/mca/lmca$ ls -la
+total 48
+drwxr-xr-x 7 student student 4096 Feb 16 17:01 .
+drwxr-xr-x 5 student student 4096 Feb 14 20:06 ..
+-rw-r--r-- 1 student student   23 Feb 11 16:48 a.txt
+-rw-r--r-- 1 student student   23 Feb 11 16:50 b.txt
+drwxr-xr-x 2 student student 4096 Feb 16 16:46 c
+drwxr-xr-x 3 student student 4096 Feb 11 17:07 d
+-rw-r--r-- 1 student student    8 Feb 11 16:54 d.txt~
+drwxr-xr-x 2 student student 4096 Feb 16 18:11 e
+drwxr-xr-x 5 student student 4096 Feb 16 16:48 f
+-rw-r--r-- 1 student student   21 Feb 16 17:01 l.txt
+-rw-r--r-- 1 student student   20 Feb 11 16:47 stud
+drwxr-xr-x 2 student student 4096 Feb 16 16:46 t
+student@T42:~/ajce/mca/lmca$ ls -s
+total 40
+4 a.txt  4 b.txt  4 c  4 d  4 d.txt~  4 e  4 f  4 l.txt  4 stud  4 t
+student@T42:~/ajce/mca/lmca$ ls *
+a.txt  b.txt  d.txt~  l.txt  stud
+
+c:
+
+d:
+f
+
+e:
+a.txt  d.txt  state.txt  st.txt  v.txt  x.txt
+
+f:
+a.txt  b.txt  c  c.txt  d.txt  e  t
+
+t:
+student@T42:~/ajce/mca/lmca$ 
+

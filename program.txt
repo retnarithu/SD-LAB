@@ -1,0 +1,700 @@
+student@T42:~$ gedit q4.sh
+student@T42:~$ gedit q5.sh
+student@T42:~$ chmod +x q5.sh
+student@T42:~$ /.q5.sh
+bash: /.q5.sh: No such file or directory
+student@T42:~$ gedit q5.sh
+student@T42:~$ chmod +x q5.sh
+student@T42:~$ ./q5.sh
+enter a number
+9 
+9
+9
+9
+9
+9
+9
+9
+9
+9
+student@T42:~$ gedit q5.sh
+student@T42:~$ ./q5.sh
+enter a number
+4
+4
+3
+2
+1
+student@T42:~$ gedit q5.sh
+student@T42:~$ ./q5.sh
+enter a number
+8
+natural numbers
+8
+natural numbers
+7
+natural numbers
+6
+natural numbers
+5
+natural numbers
+4
+natural numbers
+3
+natural numbers
+2
+natural numbers
+1
+student@T42:~$ gedit q5.sh
+student@T42:~$ ./q5.sh
+enter a number
+9
+natural numbers
+9
+8
+7
+6
+5
+4
+3
+2
+1
+student@T42:~$ gedit q5.sh
+student@T42:~$ gedit q6.sh
+student@T42:~$ chmod +x q6.sh
+student@T42:~$ ./q6.sh
+enter a number
+2
+./q6.sh: line 5: 2 \* 1 : syntax error: invalid arithmetic operator (error token is "\* 1 ")
+student@T42:~$ gedit q6.sh
+student@T42:~$ ./q6.sh
+enter a number
+2
+2 * 1 = 2
+2 * 2 = 4
+2 * 3 = 6
+2 * 4 = 8
+2 * 5 = 10
+2 * 6 = 12
+2 * 7 = 14
+2 * 8 = 16
+2 * 9 = 18
+2 * 10 = 20
+student@T42:~$ gedit q6.sh
+student@T42:~$ ./q6.sh
+enter a number
+2
+1 * 2 = 2
+2 * 2 = 4
+3 * 2 = 6
+4 * 2 = 8
+5 * 2 = 10
+6 * 2 = 12
+7 * 2 = 14
+8 * 2 = 16
+9 * 2 = 18
+10 * 2 = 20
+student@T42:~$ gedit q6.sh
+student@T42:~$ ./q6.sh
+enter a number
+2
+Multiplication Table
+1 * 2 = 2
+2 * 2 = 4
+3 * 2 = 6
+4 * 2 = 8
+5 * 2 = 10
+6 * 2 = 12
+7 * 2 = 14
+8 * 2 = 16
+9 * 2 = 18
+10 * 2 = 20
+student@T42:~$ gedit q7.sh
+student@T42:~$ chmod +x q7.sh
+student@T42:~$ ./q7.sh
+Enter the limit
+5
+1
+2
+3
+5
+student@T42:~$ gedit q7.sh
+student@T42:~$ ./q7.sh
+Enter the limit
+10
+Prime Numbers are
+1
+2
+3
+5
+7
+student@T42:~$ gedit q8.sh
+student@T42:~$ chmod +x q8.sh
+student@T42:~$ ./q8.sh
+enter the limit
+5    
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+./q8.sh: line 6: /usr/bin/expr: Argument list too long
+^Cstudent@T42:~$ ./q8.sh
+enter the limit
+^Cstudent@T42:~$ gedit q8.sh
+student@T42:~$ ./q8.sh
+enter the limit
+5
+
+^Cstudent@T42:~$ gedit q8.sh
+^A
+

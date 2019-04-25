@@ -1,0 +1,10 @@
+student@S34:~$ gedit udpBaseServer_2.java
+student@S34:~$ javac udpBaseServer_2.java
+student@S34:~$ java udpBaseServer_2
+hello 
+Client:-h
+Client:-i
+Client:-hi
+hello 
+
+

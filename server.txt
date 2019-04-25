@@ -1,0 +1,35 @@
+student@T42:~$ javac MultiClient.java
+MultiClient.java:5: error: ';' expected
+        public static void main(String[] args) throws IOException 
+                                                                 ^
+MultiClient.java:8: error: <identifier> expected
+                System.out.println("Client connected to the server");
+                                  ^
+MultiClient.java:8: error: illegal start of type
+                System.out.println("Client connected to the server");
+                                   ^
+MultiClient.java:17: error: <identifier> expected
+                System.out.println("to Start the chat, type message and press Enter key"); 
+                                  ^
+MultiClient.java:17: error: illegal start of type
+                System.out.println("to Start the chat, type message and press Enter key"); 
+                                   ^
+MultiClient.java:19: error: illegal start of type
+                while(true)
+                ^
+MultiClient.java:19: error: illegal start of type
+                while(true)
+                      ^
+MultiClient.java:35: error: class, interface, or enum expected
+}
+^
+8 errors
+student@T42:~$ gedit MultiClient.java
+student@T42:~$ javac MultiClient.java
+student@T42:~$ java MultiClient
+Client connected to the server
+to Start the chat, type message and press Enter key
+haii
+server:>hello client
+
+

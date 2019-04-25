@@ -1,0 +1,104 @@
+student@T42:~$ cd subodhitha
+student@T42:~/subodhitha$ git init samplerepo
+Initialized empty Git repository in /home/student/subodhitha/samplerepo/.git/
+student@T42:~/subodhitha$ cd samplerepo
+student@T42:~/subodhitha/samplerepo$ git add file1.txt
+fatal: pathspec 'file1.txt' did not match any files
+student@T42:~/subodhitha/samplerepo$ git add file
+fatal: pathspec 'file' did not match any files
+student@T42:~/subodhitha/samplerepo$ gedit file1.txt
+student@T42:~/subodhitha/samplerepo$ gedit file1.txt
+student@T42:~/subodhitha/samplerepo$ git add file1.txt
+student@T42:~/subodhitha/samplerepo$ git config user.name "retnarithu"
+student@T42:~/subodhitha/samplerepo$ git config user.email "subodhithar@mca.ajce.in"
+student@T42:~/subodhitha/samplerepo$ git commit -m "program using while"
+[master (root-commit) 8247f96] program using while
+ 1 file changed, 6 insertions(+)
+ create mode 100644 file1.txt
+student@T42:~/subodhitha/samplerepo$ git status
+On branch master
+nothing to commit, working tree clean
+student@T42:~/subodhitha/samplerepo$ git remote add origin https://github.com/retnarithu/samplerepo
+student@T42:~/subodhitha/samplerepo$ git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+student@T42:~/subodhitha/samplerepo$ git push origin master
+Username for 'https://github.com': retnarithu
+Password for 'https://retnarithu@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 275 bytes | 275.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/retnarithu/samplerepo
+ * [new branch]      master -> master
+student@T42:~/subodhitha/samplerepo$ cd subodhitha
+bash: cd: subodhitha: No such file or directory
+student@T42:~/subodhitha/samplerepo$ cd ..
+student@T42:~/subodhitha$ git init testrepo
+Initialized empty Git repository in /home/student/subodhitha/testrepo/.git/
+student@T42:~/subodhitha$ cd testrepo
+student@T42:~/subodhitha/testrepo$ git config user.name "retnarithu"
+student@T42:~/subodhitha/testrepo$ git config user.email "subodhithar@mca.ajce.in"
+student@T42:~/subodhitha/testrepo$ gedit README
+student@T42:~/subodhitha/testrepo$ gedit sample.c
+student@T42:~/subodhitha/testrepo$ git add README
+student@T42:~/subodhitha/testrepo$ git add sample.c
+student@T42:~/subodhitha/testrepo$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README
+	new file:   sample.c
+
+student@T42:~/subodhitha/testrepo$ git commit -m "program created"
+[master (root-commit) 4a8c57a] program created
+ 2 files changed, 7 insertions(+)
+ create mode 100644 README
+ create mode 100644 sample.c
+student@T42:~/subodhitha/testrepo$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+student@T42:~/subodhitha/testrepo$ git remote add origin https://github.com/retnarithu/testrepo
+student@T42:~/subodhitha/testrepo$ git push origin master
+Username for 'https://github.com': retnarithu
+Password for 'https://retnarithu@github.com': 
+remote: Repository not found.
+fatal: repository 'https://github.com/retnarithu/testrepo/' not found
+student@T42:~/subodhitha/testrepo$ git push origin master
+Username for 'https://github.com': retnarithu
+Password for 'https://retnarithu@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 333 bytes | 333.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/retnarithu/testrepo
+ * [new branch]      master -> master
+student@T42:~/subodhitha/testrepo$ git clone "https://github.com/retnarithu/testrepo"
+Cloning into 'testrepo'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+student@T42:~/subodhitha/testrepo$ #include<stdio.h>
+student@T42:~/subodhitha/testrepo$  int main() 
+bash: syntax error near unexpected token `('
+student@T42:~/subodhitha/testrepo$ { 
+> printf("hello world"); 
+bash: syntax error near unexpected token `"hello world"'
+student@T42:~/subodhitha/testrepo$ return 0; 
+bash: return: can only `return' from a function or sourced script
+student@T42:~/subodhitha/testrepo$ }
+

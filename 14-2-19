@@ -1,0 +1,80 @@
+student@T42:~$ cdajce
+cdajce: command not found
+student@T42:~$ cd ajce
+student@T42:~/ajce$ cd mca
+student@T42:~/ajce/mca$ cd rmca
+student@T42:~/ajce/mca/rmca$ ls
+a.txt  d.txt  e.txt  j.txt  j.txt.bak  s.txt
+student@T42:~/ajce/mca/rmca$ ls intmca
+ls: cannot access 'intmca': No such file or directory
+student@T42:~/ajce/mca/rmca$ pwd
+/home/student/ajce/mca/rmca
+student@T42:~/ajce/mca/rmca$ cp j.txt /home/student/ajce/mca/intmca
+student@T42:~/ajce/mca/rmca$ cp e.txt //home/student/ajce/mca
+student@T42:~/ajce/mca/rmca$ cp -b e.txt j.txt
+student@T42:~/ajce/mca/rmca$ ls
+a.txt  d.txt  e.txt  j.txt  j.txt~  j.txt.bak  s.txt
+student@T42:~/ajce/mca/rmca$ cat j.txt~
+student@T42:~/ajce/mca/rmca$ cat j.txt
+student@T42:~/ajce/mca/rmca$ cat s
+cat: s: No such file or directory
+student@T42:~/ajce/mca/rmca$ cat s.txt
+add
+student@T42:~/ajce/mca/rmca$ cat a.txt
+a
+s
+d
+df
+g
+student@T42:~/ajce/mca/rmca$ cp -b s.txt a.txt
+student@T42:~/ajce/mca/rmca$ ls
+a.txt  a.txt~  d.txt  e.txt  j.txt  j.txt~  j.txt.bak  s.txt
+student@T42:~/ajce/mca/rmca$ cat a.txt~
+a
+s
+d
+df
+g
+student@T42:~/ajce/mca/rmca$ cat a.txt
+add
+student@T42:~/ajce/mca/rmca$ cd ..
+student@T42:~/ajce/mca$ cd lmca
+student@T42:~/ajce/mca/lmca$ ls
+a.txt  b.txt  c.txt  d  d.txt  d.txt~  e.txt  f  stud
+student@T42:~/ajce/mca/lmca$ ls d
+f
+student@T42:~/ajce/mca/lmca$ cd f
+student@T42:~/ajce/mca/lmca/f$ ls
+a.txt  b.txt  c.txt  d.txt
+student@T42:~/ajce/mca/lmca/f$ cd ..
+student@T42:~/ajce/mca/lmca$ mkdir s
+student@T42:~/ajce/mca/lmca$ cd ..
+student@T42:~/ajce/mca$ cd rmca
+student@T42:~/ajce/mca/rmca$ mkdir t
+student@T42:~/ajce/mca/rmca$ pwd
+/home/student/ajce/mca/rmca
+student@T42:~/ajce/mca/rmca$ cd ..
+student@T42:~/ajce/mca$ cd lmca
+student@T42:~/ajce/mca/lmca$ ls
+a.txt  b.txt  c.txt  d  d.txt  d.txt~  e.txt  f  s  stud
+student@T42:~/ajce/mca/lmca$ cp -b *.txt /home/student/ajce/mca/rmca/t
+student@T42:~/ajce/mca/lmca$ man cp
+student@T42:~/ajce/mca/lmca$ ls
+a.txt  b.txt  c.txt  d  d.txt  d.txt~  e.txt  f  s  stud
+student@T42:~/ajce/mca/lmca$ cat e.txt
+student@T42:~/ajce/mca/lmca$ rm e.txt
+student@T42:~/ajce/mca/lmca$ ls
+a.txt  b.txt  c.txt  d  d.txt  d.txt~  f  s  stud
+student@T42:~/ajce/mca/lmca$ ls f
+a.txt  b.txt  c.txt  d.txt
+student@T42:~/ajce/mca/lmca$ ls s
+student@T42:~/ajce/mca/lmca$ rm -r s
+student@T42:~/ajce/mca/lmca$ ls
+a.txt  b.txt  c.txt  d  d.txt  d.txt~  f  stud
+student@T42:~/ajce/mca/lmca$ rm d.txt c.txt
+student@T42:~/ajce/mca/lmca$ ls
+a.txt  b.txt  d  d.txt~  f  stud
+student@T42:~/ajce/mca/lmca$ man rm
+student@T42:~/ajce/mca/lmca$ ^C
+student@T42:~/ajce/mca/lmca$ 
+

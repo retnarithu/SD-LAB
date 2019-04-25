@@ -1,0 +1,188 @@
+student@S2:~$ mkdir ajce
+student@S2:~$ cd ajce
+student@S2:~/ajce$ mkdir mca
+student@S2:~/ajce$ cd mca
+student@S2:~/ajce/mca$ mkdir lmca
+student@S2:~/ajce/mca$ mkdir rmca
+student@S2:~/ajce/mca$ mkdir intmca
+student@S2:~/ajce/mca$ cd lmca
+student@S2:~/ajce/mca/lmca$ cat > course
+mc
+ads
+adm
+ml
+^C
+student@S2:~/ajce/mca/lmca$ cat  course
+mc
+ads
+adm
+ml
+student@S2:~/ajce/mca/lmca$ tac course
+ml
+adm
+ads
+mc
+student@S2:~/ajce/mca/lmca$ cat -n course
+     1	mc
+     2	ads
+     3	adm
+     4	ml
+student@S2:~/ajce/mca/lmca$ cat -e course
+mc$
+ads$
+adm$
+ml$
+student@S2:~/ajce/mca/lmca$ cat > stud
+1
+2
+3
+^C
+student@S2:~/ajce/mca/lmca$ cat course >> stud
+student@S2:~/ajce/mca/lmca$ cat stud
+1
+2
+3
+mc
+ads
+adm
+ml
+student@S2:~/ajce/mca/lmca$ cat  > a.txt
+1
+
+
+2
+
+3
+^C
+student@S2:~/ajce/mca/lmca$ cat -b a.txt
+     1	1
+
+
+     2	2
+
+     3	3
+student@S2:~/ajce/mca/lmca$ man cat
+student@S2:~/ajce/mca/lmca$ cd ..
+student@S2:~/ajce/mca$ cd rmca
+student@S2:~/ajce/mca/rmca$ cat > b.txt
+num
+a
+
+d d
+^C
+student@S2:~/ajce/mca/rmca$ 
+student@S2:~/ajce/mca/rmca$ ls
+b.txt
+student@S2:~/ajce/mca/rmca$ cd ..
+student@S2:~/ajce/mca$ cd lmca
+student@S2:~/ajce/mca/lmca$ ls
+a.txt  course  stud
+student@S2:~/ajce/mca/lmca$ mv course name
+student@S2:~/ajce/mca/lmca$ ls
+a.txt  name  stud
+student@S2:~/ajce/mca/lmca$ mv -i name course
+student@S2:~/ajce/mca/lmca$ cat > c.txt
+sad
+ad
+g
+^C
+student@S2:~/ajce/mca/lmca$ mv -i a.txt c.txt
+mv: overwrite 'c.txt'? 
+student@S2:~/ajce/mca/lmca$ cat c.txt
+sad
+ad
+g
+student@S2:~/ajce/mca/lmca$ mv * rmca
+mv: target 'rmca' is not a directory
+student@S2:~/ajce/mca/lmca$ cd ..
+student@S2:~/ajce/mca$ mv * rmca
+mv: cannot move 'rmca' to a subdirectory of itself, 'rmca/rmca'
+student@S2:~/ajce/mca$ cd lmca
+bash: cd: lmca: No such file or directory
+student@S2:~/ajce/mca$ cd rmca
+student@S2:~/ajce/mca/rmca$ man mv
+student@S2:~/ajce/mca/rmca$ man mv
+student@S2:~/ajce/mca/rmca$ ls
+b.txt  intmca  lmca
+student@S2:~/ajce/mca/rmca$ ls lmca
+a.txt  course  c.txt  stud
+student@S2:~/ajce/mca/rmca$ cat a.txt
+cat: a.txt: No such file or directory
+student@S2:~/ajce/mca/rmca$ cd lmca
+student@S2:~/ajce/mca/rmca/lmca$ cat a.txt
+1
+
+
+2
+
+3
+student@S2:~/ajce/mca/rmca/lmca$ cat course
+mc
+ads
+adm
+ml
+student@S2:~/ajce/mca/rmca/lmca$ mv -n a.txt course
+student@S2:~/ajce/mca/rmca/lmca$ cat course
+mc
+ads
+adm
+ml
+student@S2:~/ajce/mca/rmca/lmca$ mv -b c.txt stud
+student@S2:~/ajce/mca/rmca/lmca$ ls
+a.txt  course  stud  stud~
+student@S2:~/ajce/mca/rmca/lmca$ cat stud
+sad
+ad
+g
+student@S2:~/ajce/mca/rmca/lmca$ cat stud ~
+sad
+ad
+g
+cat: /home/student: Is a directory
+student@S2:~/ajce/mca/rmca/lmca$ cat > b.txt
+1
+2
+34
+55
+^C
+student@S2:~/ajce/mca/rmca/lmca$ cat > e.txt
+a
+s
+d
+f
+^C
+student@S2:~/ajce/mca/rmca/lmca$ mv -b b.txt e.txt
+student@S2:~/ajce/mca/rmca/lmca$ cat e.txt
+1
+2
+34
+55
+student@S2:~/ajce/mca/rmca/lmca$ cat e.txt~
+a
+s
+d
+f
+student@S2:~/ajce/mca/rmca/lmca$ cat > mc.txt
+hello
+^C
+student@S2:~/ajce/mca/rmca/lmca$ cat > l.txt
+world
+^C
+student@S2:~/ajce/mca/rmca/lmca$ 
+student@S2:~/ajce/mca/rmca/lmca$ mv -u l.txt mc.txt
+student@S2:~/ajce/mca/rmca/lmca$ cat mc.txt
+world
+student@S2:~/ajce/mca/rmca/lmca$ man mv
+student@S2:~/ajce/mca/rmca/lmca$ touch f1
+student@S2:~/ajce/mca/rmca/lmca$ cat f1
+1	2 	3
+4	5	6
+7	8	9
+10 11 12
+student@S2:~/ajce/mca/rmca/lmca$ cat -T f1
+1^I2 ^I3
+4^I5^I6
+7^I8^I9
+10 11 12
+student@S2:~/ajce/mca/rmca/lmca$ 
+

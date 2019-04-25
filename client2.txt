@@ -1,0 +1,13 @@
+student@S34:~$ gedit Client2.java
+student@S34:~$ javac Client2.java
+student@S34:~$ java Client2
+ Enter text..
+ if client 'quit' type  exit
+hello googevening
+Server said : hello googevening
+Enter text 
+sorry good evening
+Server said : sorry good evening
+Enter text 
+
+

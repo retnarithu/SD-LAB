@@ -1,0 +1,177 @@
+student@T42:~$ cd ajce
+student@T42:~/ajce$ cd mca
+student@T42:~/ajce/mca$ cd lmca
+student@T42:~/ajce/mca/lmca$ cat state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Jharkhand
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+Mizoram
+Nagaland
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+student@T42:~/ajce/mca/lmca$ head state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+student@T42:~/ajce/mca/lmca$ head -n 5 state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+student@T42:~/ajce/mca/lmca$ head -c 6 state.txt
+Andhrastudent@T42:~/ajce/mca/lmca$ ls 
+a.txt  b.txt  c  d  d.txt~  e  f  l.txt  state.txt  stud  t
+student@T42:~/ajce/mca/lmca$ head -q state.txt a.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+welcome to the college
+student@T42:~/ajce/mca/lmca$ head -v state.txt
+==> state.txt <==
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+student@T42:~/ajce/mca/lmca$ tail state.txt
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+student@T42:~/ajce/mca/lmca$ tail -n 3 state.txt
+Uttar Pradesh
+Uttarakhand
+West Bengal
+student@T42:~/ajce/mca/lmca$ tail -3 state.txt
+Uttar Pradesh
+Uttarakhand
+West Bengal
+student@T42:~/ajce/mca/lmca$ tail +25 state.txt
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+student@T42:~/ajce/mca/lmca$ tail -c -6 state.txt
+engal
+student@T42:~/ajce/mca/lmca$ tail -c 6 state.txt
+engal
+student@T42:~/ajce/mca/lmca$ tail -c +263 state.txt
+Uttar Pradesh
+Uttarakhand
+West Bengal
+student@T42:~/ajce/mca/lmca$ tail state.txt a.txt
+==> state.txt <==
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+
+==> a.txt <==
+welcome to the college
+student@T42:~/ajce/mca/lmca$ tail -q state.txt a.txt
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+welcome to the college
+student@T42:~/ajce/mca/lmca$ tail -v state.txt
+==> state.txt <==
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+student@T42:~/ajce/mca/lmca$ tail - - version
+==> standard input <==
+^C                  
+student@T42:~/ajce/mca/lmca$ tail --version
+tail (GNU coreutils) 8.28
+Copyright (C) 2017 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Paul Rubin, David MacKenzie, Ian Lance Taylor,
+and Jim Meyering.
+student@T42:~/ajce/mca/lmca$ tail -f logfile
+tail: cannot open 'logfile' for reading: No such file or directory
+tail: no files remaining
+student@T42:~/ajce/mca/lmca$ tail -f state.txt
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+
+

@@ -1,0 +1,162 @@
+student@T15:~$ cd mca
+student@T15:~/mca$ cd ajce
+student@T15:~/mca/ajce$  cat > p.txt
+add multiply sub 
+aaaaaa ddddd tttt
+123 345 12345
+^C
+student@T15:~/mca/ajce$ wc p.txt
+ 3  9 50 p.txt
+student@T15:~/mca/ajce$ cut -b p.txt
+cut: invalid byte/character position ‘p.txt’
+Try 'cut --help' for more information.
+student@T15:~/mca/ajce$ cat p.txt
+add multiply sub 
+aaaaaa ddddd tttt
+123 345 12345
+student@T15:~/mca/ajce$ cut -b 1 p.txt
+a
+a
+1
+student@T15:~/mca/ajce$ cat > e.txt
+sfdgjh ghjkuw awud
+asdff hhed^C
+student@T15:~/mca/ajce$ cat e.txt
+sfdgjh ghjkuw awud
+student@T15:~/mca/ajce$ cat > f1.txt
+apple 
+orange
+mango 
+coconut
+honey
+bee
+pine
+juice
+^C
+student@T15:~/mca/ajce$ cat f1.txt
+apple 
+orange
+mango 
+coconut
+honey
+bee
+pine
+juice
+student@T15:~/mca/ajce$ cat > f2.txt
+agra
+delhi
+assam
+kerala
+haryana
+kashmir
+^C
+student@T15:~/mca/ajce$ cat f2.txt
+agra
+delhi
+assam
+kerala
+haryana
+kashmir
+student@T15:~/mca/ajce$ cat > f3.txt
+101
+102
+103
+104
+105
+^C
+student@T15:~/mca/ajce$ cat f3.txt
+101
+102
+103
+104
+105
+student@T15:~/mca/ajce$ paste f1.txt f2.txt f3.txt
+apple 	agra	101
+orange	delhi	102
+mango 	assam	103
+coconut	kerala	104
+honey	haryana	105
+bee	kashmir	
+pine		
+juice		
+student@T15:~/mca/ajce$ paste -d "|" f1.txt f2.txt f3.txt
+apple |agra|101
+orange|delhi|102
+mango |assam|103
+coconut|kerala|104
+honey|haryana|105
+bee|kashmir|
+pine||
+juice||
+student@T15:~/mca/ajce$ paste -d "| ," f1.txt f2.txt f3.txt
+apple |agra 101
+orange|delhi 102
+mango |assam 103
+coconut|kerala 104
+honey|haryana 105
+bee|kashmir 
+pine| 
+juice| 
+student@T15:~/mca/ajce$ paste -d "|," f1.txt f2.txt f3.txt
+apple |agra,101
+orange|delhi,102
+mango |assam,103
+coconut|kerala,104
+honey|haryana,105
+bee|kashmir,
+pine|,
+juice|,
+student@T15:~/mca/ajce$ paste -s f1.txt f2.txt f3.txt
+apple 	orange	mango 	coconut	honey	bee	pine	juice
+agra	delhi	assam	kerala	haryana	kashmir
+101	102	103	104	105
+student@T15:~/mca/ajce$ cat f1 | paste --
+cat: f1: No such file or directory
+student@T15:~/mca/ajce$ cat f1.txt | paste --
+apple 
+orange
+mango 
+coconut
+honey
+bee
+pine
+juice
+student@T15:~/mca/ajce$ paste -s -d ":" f1.txt f2.txt f3.txt
+apple :orange:mango :coconut:honey:bee:pine:juice
+agra:delhi:assam:kerala:haryana:kashmir
+101:102:103:104:105
+student@T15:~/mca/ajce$ paste --- < f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T15:~/mca/ajce$ paste - - - < f1.txt
+apple 	orange	mango 
+coconut	honey	bee
+pine	juice	
+student@T15:~/mca/ajce$ cat f1.txt | paste - -
+apple 	orange
+mango 	coconut
+honey	bee
+pine	juice
+student@T15:~/mca/ajce$ cat f1.txt | paste - - -
+apple 	orange	mango 
+coconut	honey	bee
+pine	juice	
+student@T15:~/mca/ajce$ man paste
+student@T15:~/mca/ajce$ paste - - < f2.txt
+agra	delhi
+assam	kerala
+haryana	kashmir
+student@T15:~/mca/ajce$ paste - - - < f2.txt
+agra	delhi	assam
+kerala	haryana	kashmir
+student@T15:~/mca/ajce$ man paste
+student@T15:~/mca/ajce$ paste --v
+paste (GNU coreutils) 8.28
+Copyright (C) 2017 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by David M. Ihnat and David MacKenzie.
+student@T15:~/mca/ajce$ 
+

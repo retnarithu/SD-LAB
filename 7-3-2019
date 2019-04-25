@@ -1,0 +1,213 @@
+student@T42:~$ cd ajce
+student@T42:~/ajce$ cd mca
+student@T42:~/ajce/mca$ cd lmca
+student@T42:~/ajce/mca/lmca$ ls
+a.txt  b.txt  c  d  d.txt~  e  f  list.txt  l.txt  state.txt  stud  t
+student@T42:~/ajce/mca/lmca$ cat state
+cat: state: No such file or directory
+student@T42:~/ajce/mca/lmca$ cat state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Jharkhand
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+Mizoram
+Nagaland
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+student@T42:~/ajce/mca/lmca$ tail -n 7 state.txt 
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+student@T42:~/ajce/mca/lmca$ tail -n 7 state.txt | sort -r
+West Bengal
+Uttar Pradesh
+Uttarakhand
+Tripura
+Telangana
+Tamil Nadu
+Sikkim
+student@T42:~/ajce/mca/lmca$ cat state.txt | head -n 20 
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Jharkhand
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+Mizoram
+Nagaland
+Odisha
+student@T42:~/ajce/mca/lmca$ cat state.txt | head -n 20 | tail -n 5 > at.txt
+student@T42:~/ajce/mca/lmca$ cat at.txt
+Manipur
+Meghalaya
+Mizoram
+Nagaland
+Odisha
+student@T42:~/ajce/mca/lmca$ cd ..
+student@T42:~/ajce/mca$ cd intmca
+student@T42:~/ajce/mca/intmca$ ls
+linux.txt  state
+student@T42:~/ajce/mca/intmca$ ls
+edu.txt  linux.txt  state
+student@T42:~/ajce/mca/intmca$ cat edu.txt
+Better education is very necessary for all to go ahead in the life and get success. It develops confidence and helps building personality of a person. School education plays a great role in everyone’s life. The whole education has been divided into three divisions such as the primary education, secondary education and Higher Secondary education. All the divisions of education have their own importance and benefits. Primary education prepares the base which helps throughout the life, secondary education prepares the path for further study and higher secondary education prepares the ultimate path of the future and whole life. Our good or bad education decides that which type of person we would in the future.
+             Education is very important tool for everyone to succeed in life and get something different. It helps a lot in lessening the challenges of life difficult life. Knowledge gained throughout the education period enables each and every individual confident about their life. It opens various doors to the opportunities of achieving better prospects in life so promotes career growth. Many awareness programmes has been run by the government in enhance the value of education in rural areas. It brings feeling of equality among all people in the society and promotes growth and development of the country.
+student@T42:~/ajce/mca/intmca$ cat edu.txt
+Better education is very necessary for all to go ahead in the life and get success. It develops confidence and helps building personality of a person. School education plays a great role in everyone’s life. The whole education has been divided into three divisions such as the primary education, secondary education and Higher Secondary education. All the divisions of education have their own importance and benefits. Primary education prepares the base which helps throughout the life, secondary education prepares the path for further study and higher secondary education prepares the ultimate path of the future and whole life. Our good or bad education decides that which type of person we would in the future.
+             
+student@T42:~/ajce/mca/intmca$ grep -i all edu.txt
+Better education is very necessary for all to go ahead in the life and get success. It develops confidence and helps building personality of a person. School education plays a great role in everyone’s life. The whole education has been divided into three divisions such as the primary education, secondary education and Higher Secondary education. All the divisions of education have their own importance and benefits. Primary education prepares the base which helps throughout the life, secondary education prepares the path for further study and higher secondary education prepares the ultimate path of the future and whole life. Our good or bad education decides that which type of person we would in the future.
+student@T42:~/ajce/mca/intmca$ grep all edu.txt
+Better education is very necessary for all to go ahead in the life and get success. It develops confidence and helps building personality of a person. School education plays a great role in everyone’s life. The whole education has been divided into three divisions such as the primary education, secondary education and Higher Secondary education. All the divisions of education have their own importance and benefits. Primary education prepares the base which helps throughout the life, secondary education prepares the path for further study and higher secondary education prepares the ultimate path of the future and whole life. Our good or bad education decides that which type of person we would in the future.
+student@T42:~/ajce/mca/intmca$ grep -c "life" edu.txt
+1
+student@T42:~/ajce/mca/intmca$ grep -c "the" edu.txt
+1
+student@T42:~/ajce/mca/intmca$ grep -l "education" *
+edu.txt
+linux.txt
+student@T42:~/ajce/mca/intmca$ grep -w "education" edu.txt
+Better education is very necessary for all to go ahead in the life and get success. It develops confidence and helps building personality of a person. School education plays a great role in everyone’s life. The whole education has been divided into three divisions such as the primary education, secondary education and Higher Secondary education. All the divisions of education have their own importance and benefits. Primary education prepares the base which helps throughout the life, secondary education prepares the path for further study and higher secondary education prepares the ultimate path of the future and whole life. Our good or bad education decides that which type of person we would in the future.
+student@T42:~/ajce/mca/intmca$ grep -o "education" edu.txt
+education
+education
+education
+education
+education
+education
+education
+education
+education
+education
+education
+student@T42:~/ajce/mca/intmca$ grep -n "education" edu.txt
+1:Better education is very necessary for all to go ahead in the life and get success. It develops confidence and helps building personality of a person. School education plays a great role in everyone’s life. The whole education has been divided into three divisions such as the primary education, secondary education and Higher Secondary education. All the divisions of education have their own importance and benefits. Primary education prepares the base which helps throughout the life, secondary education prepares the path for further study and higher secondary education prepares the ultimate path of the future and whole life. Our good or bad education decides that which type of person we would in the future.
+student@T42:~/ajce/mca/intmca$ grep -v "education" edu.txt
+             
+student@T42:~/ajce/mca/intmca$ grep "^education" edu.txt
+student@T42:~/ajce/mca/intmca$ cat > unix.txt
+^C
+student@T42:~/ajce/mca/intmca$ cat unix.txt
+unix is great os. unix is opensource. unix is free os.
+learn operating system.
+Unix linux which one you choose.
+uNix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+student@T42:~/ajce/mca/intmca$ grep -c "unix" unix.txt
+2
+student@T42:~/ajce/mca/intmca$ grep -l "unix" *
+unix.txt
+student@T42:~/ajce/mca/intmca$ grep -w "unix" unix.txt
+unix is great os. unix is opensource. unix is free os.
+uNix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+student@T42:~/ajce/mca/intmca$ grep -o "unix" unix.txt
+unix
+unix
+unix
+unix
+unix
+unix
+student@T42:~/ajce/mca/intmca$ grep -n "unix" unix.txt
+1:unix is great os. unix is opensource. unix is free os.
+4:uNix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+student@T42:~/ajce/mca/intmca$ grep -v "unix" unix.txt
+learn operating system.
+Unix linux which one you choose.
+student@T42:~/ajce/mca/intmca$ grep "^unix" unix.txt
+unix is great os. unix is opensource. unix is free os.
+student@T42:~/ajce/mca/intmca$ grep "os$"  unix.txt
+student@T42:~/ajce/mca/intmca$ grep -a3 "multiuser"  unix.txt
+unix is great os. unix is opensource. unix is free os.
+learn operating system.
+Unix linux which one you choose.
+uNix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+student@T42:~/ajce/mca/intmca$ grep -a3 "unix"  unix.txt
+unix is great os. unix is opensource. unix is free os.
+learn operating system.
+Unix linux which one you choose.
+uNix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+student@T42:~/ajce/mca/intmca$ cat edu.txt
+Better education is very necessary for all to go ahead in the life and
+
+get success. It develops confidence and helps building personality of
+
+
+ a person. School education plays a great role in everyone’s life. The
+
+ whole education has been divided into three divisions such as the
+
+ primary education, secondary education and Higher Secondary
+
+ education. All the divisions of education have their own importance
+
+
+ and benefits. 
+student@T42:~/ajce/mca/intmca$ grep -n "education" edu.txt
+1:Better education is very necessary for all to go ahead in the life and
+6: a person. School education plays a great role in everyone’s life. The
+8: whole education has been divided into three divisions such as the
+10: primary education, secondary education and Higher Secondary
+12: education. All the divisions of education have their own importance
+student@T42:~/ajce/mca/intmca$ ls
+edu.txt  linux.txt  state  unix.txt
+student@T42:~/ajce/mca/intmca$ egrep -w 'linux|unix' linux.txt unix.txt
+unix.txt:unix is great os. unix is opensource. unix is free os.
+unix.txt:Unix linux which one you choose.
+unix.txt:uNix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+student@T42:~/ajce/mca/intmca$ egrep -w 'Linux|unix' linux.txt unix.txt
+linux.txt:Linux (/ˈlɪnəks/ (About this soundlisten) LIN-əks)[9][10] is a family of free and open-source software operating systems based on the Linux kernel,[11] an operating system kernel first released on September 17, 1991 by Linus Torvalds.[12][13][14] Linux is typically packaged in a Linux distribution (or distro for short).
+linux.txt:Distributions include the Linux kernel and supporting system software and libraries, many of which are provided by the GNU Project. Many Linux distributions use the word "Linux" in their name, but the Free Software Foundation uses the name GNU/Linux to emphasize the importance of GNU software, causing some controversy.[15][16]
+linux.txt:Popular Linux distributions[17][18][19] include Debian, Fedora, and Ubuntu. Commercial distributions include Red Hat Enterprise Linux and SUSE Linux Enterprise Server. Desktop Linux distributions include a windowing system such as X11 or Wayland, and a desktop environment such as GNOME or KDE Plasma. Distributions intended for servers may omit graphics altogether, and include a solution stack such as LAMP. Because Linux is freely redistributable, anyone may create a distribution for any purpose.
+linux.txt:Linux was originally developed for personal computers based on the Intel x86 architecture, but has since been ported to more platforms than any other operating system.[20] Linux is the leading operating system on servers and other big iron systems such as mainframe computers, and the only OS used on TOP500 supercomputers (since November 2017, having gradually eliminated all competitors).[21][22][23] It is used by around 2.3 percent of desktop computers.[24][25] The Chromebook, which runs the Linux kernel-based Chrome OS, dominates the US K–12 education market and represents nearly 20 percent of sub-$300 notebook sales in the US.[26]
+linux.txt:Linux also runs on embedded systems, i.e. devices whose operating system is typically built into the firmware and is highly tailored to the system. This includes routers, automation controls, televisions,[27][28] digital video recorders, video game consoles, and smartwatches.[29] Many smartphones and tablet computers run Android and other Linux derivatives.[30] Because of the dominance of Android on smartphones, Linux has the largest installed base of all general-purpose operating systems.[31]
+linux.txt:Linux is one of the most prominent examples of free and open-source software collaboration. The source code may be used, modified and distributed—commercially or non-commercially—by anyone under the terms of its respective licenses, such as the GNU General Public License. 
+linux.txt:Although not released until 1992, due to legal complications, development of 386BSD, from which NetBSD, OpenBSD and FreeBSD descended, predated that of Linux. Torvalds has also stated that if 386BSD had been available at the time, he probably would not have created Linux.[38]
+unix.txt:unix is great os. unix is opensource. unix is free os.
+unix.txt:uNix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+student@T42:~/ajce/mca/intmca$ grep 'education\|School' edu.txt
+Better education is very necessary for all to go ahead in the life and
+ a person. School education plays a great role in everyone’s life. The
+ whole education has been divided into three divisions such as the
+ primary education, secondary education and Higher Secondary
+ education. All the divisions of education have their own importance
+student@T42:~/ajce/mca/intmca$ grep -c 'education' edu.txt
+5
+student@T42:~/ajce/mca/intmca$ grep -c "education" edu.txt
+5
+student@T42:~/ajce/mca/intmca$ 
+

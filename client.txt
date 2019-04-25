@@ -1,0 +1,18 @@
+student@T42:~$ gedit client.java
+student@T42:~$ gedit server.java
+
+student@T42:~$ 
+student@T42:~$ gedit MultiServer.java
+student@T42:~$ gedit MultiClient.java
+student@T42:~$ javac MultiServer.java
+student@T42:~$ java MultiServer.java
+Error: Could not find or load main class MultiServer.java
+student@T42:~$ java MultiServer
+waiting for client.........
+^Cstudent@T42:~$ java MultiServer
+waiting for client.........
+client connected 
+client:>haii
+hello client
+
+
